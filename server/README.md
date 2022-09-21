@@ -9,12 +9,11 @@ Figma:
 
 https://www.figma.com/file/IWJ3BYBLXFvHEcSxO9qVaH/Dashboard--SHYMU
 
-Copy the repo to clone it : 
+Copy the repo to clone it :
 
-https://github.com/DogSoulDev/Shymu
+https://github.com/DogSoulDev/Shymu.git
 
 We have three folders , each one deploys one side of the project:
-
 
 💻 **Admin** can access to edit, upload and modify the content.
 
@@ -29,6 +28,5 @@ At the three sides you must use this commands for each folder you are:
 npm install
 
 npm start
-
 
 To be continue...

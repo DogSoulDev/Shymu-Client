@@ -11,7 +11,7 @@ https://www.figma.com/file/IWJ3BYBLXFvHEcSxO9qVaH/Dashboard--SHYMU
 
 Copy the repo to clone it :
 
-https://github.com/DogSoulDev/Shymu
+https://github.com/DogSoulDev/Shymu.git
 
 We have three folders , each one deploys one side of the project:
 
