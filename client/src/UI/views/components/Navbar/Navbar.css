@@ -1,0 +1,42 @@
+
+
+/* import SearchIcon from "../../assets/images/search.svg"; */
+
+.container__navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0 0;
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  height: 24px;
+  width: 175px;
+  padding: 6px 7px 6px 26px;
+  background: rgb(246, 245, 245)  no-repeat 7px center;
+}
+/* url(${SearchIcon}) */
+.input__navbar {
+    flex: 1;
+    font-size: 13px;
+    color: #121212;
+    border: 0;
+  }
+
+.user{
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+}
+
+
+  /* img {
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    margin-right: 5px;
+  } */
+
