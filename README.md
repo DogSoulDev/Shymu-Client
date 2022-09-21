@@ -22,7 +22,8 @@ We have three folders , each one deploys one side of the project:
 
 💾 **Server** side takes all the info and save it to use it for more things.
 
-![1663771861277](image/README/1663771861277.png)
+![readme img](https://user-images.githubusercontent.com/104593484/191543804-e92fd068-ed74-458d-84f0-09d4e5463d3f.png)
+
 
 At the three sides you must use this commands for each folder you are:
 
