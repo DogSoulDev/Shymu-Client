@@ -9,12 +9,11 @@ Figma:
 
 https://www.figma.com/file/IWJ3BYBLXFvHEcSxO9qVaH/Dashboard--SHYMU
 
-Copy the repo to clone it : 
+Copy the repo to clone it :
 
 https://github.com/DogSoulDev/Shymu
 
 We have three folders , each one deploys one side of the project:
-
 
 💻 **Admin** can access to edit, upload and modify the content.
 
@@ -24,12 +23,10 @@ We have three folders , each one deploys one side of the project:
 
 ![readme img](https://user-images.githubusercontent.com/104593484/191543804-e92fd068-ed74-458d-84f0-09d4e5463d3f.png)
 
-
 At the three sides you must use this commands for each folder you are:
 
 npm install
 
 npm start
 
-
-To be continue...
+To be continue... in few days...
