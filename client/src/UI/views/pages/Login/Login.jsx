@@ -61,7 +61,7 @@ function App() {
             <input
               type='text'
               name='username'
-              autoComplete='new-password'
+              autoComplete='off'
               required
             />
             <span>UserName</span>

@@ -1,0 +1,79 @@
+
+
+.container__player{
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #282828;
+  padding: 12px;
+}
+
+.current{
+  display: flex;
+  align-items: center;
+}
+.img__player {
+    width: 48px;
+    height: 48px;
+  }
+
+.song__name {
+    margin-left: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.song__length {
+      font-size: 13px;
+      color: #fff;
+    }
+
+small {
+      font-size: 11px;
+      color: #b3b3b3;
+      margin-top: 5px;
+    }
+
+
+.progress{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls{
+  display: flex;
+  align-items: center;
+}
+button {
+    background: transparent;
+    border: 0px;
+    margin: 0 15px;
+  }
+
+.time{
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+.song__length{
+    font-size: 11px;
+    color: #b3b3b3;
+  }
+
+  .progressSlider{
+  width: 500px;
+  margin: 0 15px;
+}
+
+.volume{
+  display: flex;
+  align-items: center;
+  width: 100px;
+  margin-right: 20px;
+}
+.icon__player {
+    margin-right: 5px;
+  }
+

@@ -8,7 +8,11 @@ const Header = () => (
       <input className="input__navbar" type="text" placeho="Search" />
     </div>
     <div className="user">
-     
+    <img className="img__user"
+        src="https://avatars0.githubusercontent.com/u/22546201?v=4"
+        alt="Avatar"
+      />
+     Adrià Vallès
       
     </div>
   </div>
