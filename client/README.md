@@ -15,18 +15,18 @@ https://github.com/DogSoulDev/Shymu.git
 
 We have three folders , each one deploys one side of the project:
 
-💻 **Admin** can access to edit, upload and modify the content.
+💻 **Admin** can access to edit, upload and modify the content. (In process).
 
-🙋 **Client** side is just to use the app and have fun !
+🙋 **Client** side is just to use the app and have fun !  (cd client)
 
-💾 **Server** side takes all the info and save it to use it for more things.
+https://github.com/DogSoulDev/Shymu-client.git
 
-![1663771861277](image/README/1663771861277.png)
+💾 **Server** side takes all the info and save it to use it for more things. (cd server)
 
-At the three sides you must use this commands for each folder you are:
+https://github.com/DogSoulDev/Shymu-server.git
 
 npm install
 
 npm start
 
-To be continue...
+To be continue... in few days...
