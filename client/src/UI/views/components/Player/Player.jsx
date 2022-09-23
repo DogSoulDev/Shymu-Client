@@ -1,14 +1,14 @@
 import React from "react";
 import Slider from "rc-slider";
-
-
+import "./Player.css";
 import VolumeIcon from "../../../img/volume.svg";
 import ShuffleIcon from "../../../img/shuffle.svg";
 import BackwardIcon from "../../../img/backward.svg";
 import PlayIcon from "../../../img/play.svg";
-import PauseIcon from "../../../img/pause.svg";
 import ForwardIcon from "../../../img/forward.svg";
 import RepeatIcon from "../../../img/repeat.svg";
+// import PauseIcon from "../../../img/pause.svg";
+
 
 const Player = () => (
   <div className="container__player">

@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #282828;
+  background: #7e98f4;
   padding: 12px;
 }
 
@@ -26,12 +26,12 @@
 
 .song__length {
       font-size: 13px;
-      color: #fff;
+      color: #121212;
     }
 
 small {
       font-size: 11px;
-      color: #b3b3b3;
+      color:#121212;
       margin-top: 5px;
     }
 
@@ -45,6 +45,7 @@ small {
 .controls{
   display: flex;
   align-items: center;
+  padding-top: 15px;
 }
 button {
     background: transparent;
@@ -58,11 +59,11 @@ button {
   margin-top: 5px;
 }
 .song__length{
-    font-size: 11px;
-    color: #b3b3b3;
+    font-size: 15px;
+    color: #121212;
   }
 
-  .progressSlider{
+.progressSlider{
   width: 500px;
   margin: 0 15px;
 }
@@ -70,10 +71,13 @@ button {
 .volume{
   display: flex;
   align-items: center;
-  width: 100px;
+  width: 30px;
   margin-right: 20px;
 }
 .icon__player {
     margin-right: 5px;
+    display: flex;
+    align-items: center;
+    width: 20px;
   }
 

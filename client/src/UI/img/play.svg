@@ -10,8 +10,8 @@
                 <g id="Lower-Bar" transform="translate(0.000000, 656.000000)">
                     <g id="Center-Controls" transform="translate(453.000000, 9.000000)">
                         <g id="play" transform="translate(91.000000, 0.000000)">
-                            <circle id="Oval-5" stroke="#979797" cx="16" cy="16" r="15.5"></circle>
-                            <polygon id="Fill-1" fill="#FFFFFF" points="12 10 12 22 21 15.9987998"></polygon>
+                            <circle id="Oval-5" stroke="#121212" cx="16" cy="16" r="15.5"></circle>
+                            <polygon id="Fill-1" fill="#121212" points="12 10 12 22 21 15.9987998"></polygon>
                         </g>
                     </g>
                 </g>
