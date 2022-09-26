@@ -1,6 +1,6 @@
 import App from "./App";
-import Login from "./UI/views/pages/Login/Login.jsx";
-import Error404 from "./UI/views/pages/Error404/Error404.jsx";
+// import Login from "./UI/views/pages/Login/Login";
+import Error404 from "./UI/views/pages/Error404/Error404";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { UserDataContextProvider } from "./contexts/UserDataContext";
 
@@ -9,7 +9,7 @@ const Router = () => {
 		<UserDataContextProvider>
 			<BrowserRouter>
 				<Routes>
-					<Route path='/src/UI/views/pages/Login/Login.jsx' element={<Login />} />
+					{/* <Route path='/login' element={<Login />} /> */}
 				</Routes>
 				<Routes>
 					<Route path='/' element={<App />} />

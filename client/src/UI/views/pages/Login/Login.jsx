@@ -4,7 +4,7 @@ import Logo from "../../../img/Logo.png";
 import Dashboard from "../Dashboard/Dashboard";
 
 
-function App() {
+function Login() {
   // React States
   const [errorMessages, setErrorMessages] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -97,4 +97,4 @@ function App() {
   );
 }
 
-export default App;
+export default Login;
