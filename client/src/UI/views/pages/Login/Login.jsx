@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./Login.css";
 import Logo from "../../../img/Logo.png";
 import Dashboard from "../Dashboard/Dashboard";
+import Register from "../SignUp/Register"
+import {Link} from "react-router-dom"
 
 
 function App() {
@@ -82,8 +84,8 @@ function App() {
           </div>
           {renderErrorMessage("userpass")}
           <div className='links'>
-            <a href='#'>Forgot Password ?</a>
-            <a href='#'> SignUp </a>
+            <Link to="/Register">SignUp</Link>
+
           </div>
           <input type='submit' value='Login' />
         </form>
