@@ -1,4 +1,5 @@
 import Login from "./UI/views/pages/Login/Login.jsx";
+// import GlobalStyle from "./styles/global";
 
 const App = () => {
 	<>

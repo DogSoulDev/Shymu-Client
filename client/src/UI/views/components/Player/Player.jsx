@@ -51,13 +51,13 @@ const Player = () => (
       </div>
     </div>
 
-    <div className="volume">
+    <div className="volume icon__player">
       <img src={VolumeIcon} alt="Volume" />
       <Slider
         railStyle={{ background: "#404040", borderRadius: 10 }}
         trackStyle={{ background: "#fff" }}
         handleStyle={{ display: "none" }}
-        //value={50}
+        value={50}
       />
     </div>
   </div>

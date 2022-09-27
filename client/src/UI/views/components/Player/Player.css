@@ -7,6 +7,8 @@
   align-items: center;
   background: #7e98f4;
   padding: 12px;
+  position: "relative";
+  bottom: "0";
 }
 
 .current{
@@ -71,7 +73,7 @@ button {
 .volume{
   display: flex;
   align-items: center;
-  width: 30px;
+  width: 80px;
   margin-right: 20px;
 }
 .icon__player {

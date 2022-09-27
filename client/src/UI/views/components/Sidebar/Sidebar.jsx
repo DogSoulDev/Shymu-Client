@@ -16,25 +16,25 @@ const Sidebar = () => (
 
       <div className="nav">
         <li>
-          <span className="sidebar__titles">SUA BIBLIOTECA</span>
+          <span className="sidebar__titles">Your Library</span>
         </li>
         <li>
-          <a className="sidebar__links" href="">Seus Daily Mix</a>
+          <a className="sidebar__links" href="">Your Daily Mix</a>
         </li>
         <li>
-          <a className="sidebar__links" href="">Tocados Recentemente</a>
+          <a className="sidebar__links" href="">Last Played</a>
         </li>
         <li>
-          <a className="sidebar__links" href="">Músicas</a>
+          <a className="sidebar__links" href="">Music</a>
         </li>
         <li>
           <a className="sidebar__links" href="">Álbums</a>
         </li>
         <li>
-          <a className="sidebar__links" href="">Artistas</a>
+          <a className="sidebar__links" href="">Artists</a>
         </li>
         <li>
-          <a className="sidebar__links" href="">Vídeos</a>
+          <a className="sidebar__links" href="">Videos</a>
         </li>
         <li>
           <a className="sidebar__links" href="">Podcasts</a>
@@ -51,7 +51,7 @@ const Sidebar = () => (
     {/* <div className="nav"> */}
     <div className="sidebar__links">
       {/* <img src={AddPlaylistIcon} alt="Adicionar playlist" /> */}
-      Nova Playlist
+      New Playlist
       </div>
     </div >
  </div>
