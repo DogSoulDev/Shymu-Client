@@ -11,32 +11,32 @@ const Browser = () => (
           src="https://avatars0.githubusercontent.com/u/22546201?v=4"
           alt="Playlist"
         />
-        <strong>Rock dos bons</strong>
-        <p className="p__browse">Relaxe enquanto ouve o melhor do rock mundial</p>
+        <strong>Them Shades</strong>
+        <p className="p__browse">Got me Grooving</p>
       </div>
       <div className="playlist" to="/playlists/1">
         <img className="img__browse"
           src="https://avatars0.githubusercontent.com/u/22546201?v=4"
           alt="Playlist"
         />
-        <strong>Rock dos bons</strong>
-        <p className="p__browse">Relaxe enquanto ouve o melhor do rock mundial</p>
+        <strong>Them Shades</strong>
+        <p className="p__browse">Got me Grooving</p>
       </div>
       <div className="playlist" to="/playlists/1">
         <img className="img__browse"
           src="https://avatars0.githubusercontent.com/u/22546201?v=4"
           alt="Playlist"
         />
-        <strong>Rock dos bons</strong>
-        <p className="p__browse">Relaxe enquanto ouve o melhor do rock mundial</p>
+        <strong>Them Shades</strong>
+        <p className="p__browse">Got me Grooving</p>
       </div>
       <div className="playlist" to="/playlists/1">
         <img className="img__browse"
           src="https://avatars0.githubusercontent.com/u/22546201?v=4"
           alt="Playlist"
         />
-        <strong>Rock dos bons</strong>
-        <p className="p__browse">Relaxe enquanto ouve o melhor do rock mundial</p>
+        <strong>Them Shades</strong>
+        <p className="p__browse"></p>
       </div>
     </div>
   </div>
