@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Login.css";
 import Logo from "../../../img/Logo.png";
 import Dashboard from "../Dashboard/Dashboard";
-import Register from "../SignUp/Register"
+import register from "../SignUp/Register"
 import {Link} from "react-router-dom"
 
 
@@ -84,7 +84,7 @@ function App() {
           </div>
           {renderErrorMessage("userpass")}
           <div className='links'>
-            <Link to="/Register">SignUp</Link>
+            <Link to="/register">SignUp</Link>
 
           </div>
           <input type='submit' value='Login' />
