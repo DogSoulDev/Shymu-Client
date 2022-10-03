@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./Login.css";
 import Logo from "../../../img/Logo.png";
-import Dashboard from "../Dashboard/Dashboard";
-import register from "../SignUp/Register"
+import Dashboard from "../../pages/Dashboard/Dashboard";
+import Register from "../SignUp/Register"
 import {Link} from "react-router-dom"
 
 

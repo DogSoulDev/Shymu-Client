@@ -1,3 +1,4 @@
+import Login from "../../components/Login/Login";
 import "./onboarding.css";
 import Singer from "../../../img/singer-first_page.jpg";
 
@@ -15,7 +16,12 @@ const OnboardingFourPage = () => {
             everyone."
           </p>
         </div>
-        <input type='button' value='Get Started' className='card__btn' />
+        <input
+          type='button'
+          value='Get Started'
+          className='card__btn'
+          onClick={Login}
+        />
       </div>
     </div>
   );
