@@ -1,16 +1,19 @@
 import App from "./App";
-import Login from "./UI/views/pages/Login/Login.jsx";
+//import Login from "./UI/views/pages/Login/Login.jsx";
 import Register from "./UI/views/pages/SignUp/Register"
 import Error404 from "./UI/views/pages/Error404/Error404.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { UserDataContextProvider } from "./contexts/UserDataContext";
+import OnboardingSecondPage from "./UI/views/pages/Onboarding/OnboardingSecondPage";
+//import OnboardingFirstPage from "./UI/views/pages/Onboarding/OnboardingFirstPage";
+//import OnboardingLogo from "./UI/views/pages/Onboarding/OnboardingLogo";
 
 const Router = () => {
 	return (
 		<UserDataContextProvider>
 			<BrowserRouter>
 				<Routes>
-					<Route path='/src/UI/views/pages/Login/Login.jsx' element={<Login />} />
+					<Route path='/src/UI/views/pages/Login/Login.jsx' element={<OnboardingSecondPage />} />
 				</Routes>
 				<Routes>
 					<Route path='/' element={<App />} />
