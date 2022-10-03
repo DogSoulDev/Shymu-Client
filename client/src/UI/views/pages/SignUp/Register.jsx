@@ -1,7 +1,24 @@
 import "../Login/Login.css";
-
+import { useState, useEffect } from "react";
+import Axios from "axios";
 
 const Register = () => {
+	const [name, setName] = useState("");
+	const [email, setEmail] = useState("");
+	const [username, setUsername] = useState("");
+	const [password, setPassword] = useState("");
+
+	const createUser = () => {
+		Axios.post("http://localhost:3001/createUser", {
+			name,
+			email,
+			username,
+			password,
+		}).then((response) => {
+			alert("User created.");
+		});
+	};
+
 	return (
 		<div className='body'>
 			<div className='boxRegister'>
@@ -13,7 +30,9 @@ const Register = () => {
 						<input
 							type='text'
 							name='name'
-							autoComplete='new-password'
+							onChange={(event) => {
+								setName(event.target.value);
+							}}
 							required
 						/>
 						<span>Name</span>
@@ -24,7 +43,9 @@ const Register = () => {
 						<input
 							type='text'
 							name='username'
-							autoComplete='new-password'
+							onChange={(event) => {
+								setEmail(event.target.value);
+							}}
 							required
 						/>
 						<span>UserName</span>
@@ -32,9 +53,11 @@ const Register = () => {
 					</div>
 					<div className='inputBox'>
 						<input
-							type='email'
+							type='text'
 							name='email'
-							autoComplete='new-password'
+							onChange={(event) => {
+								setUsername(event.target.value);
+							}}
 							required
 						/>
 						<span>Email</span>
@@ -42,9 +65,11 @@ const Register = () => {
 					</div>
 					<div className='inputBox'>
 						<input
-							type='password'
+							type='text'
 							name='pass'
-							autoComplete='new-password'
+							onChange={(event) => {
+								setPassword(event.target.value);
+							}}
 							required
 						/>{" "}
 						<span>Password</span>
@@ -64,7 +89,7 @@ const Register = () => {
 						By creating an account, I consent to the processing of my personal
 						data in accordance with the PRIVACY POLICY
 					</h6>
-					<input type='submit' value='SingUp' />
+					<button onClick={createUser}>Create User</button>
 				</form>
 			</div>
 		</div>
