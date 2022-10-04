@@ -1,13 +1,16 @@
-import Login from "../../components/Login/Login";
+// import Login from "../../components/Login/Login";
 import "./onboarding.css";
-import Singer from "../../../img/singer-first_page.jpg";
+import Photo4 from "../../../img/photo4.jpg";
+import { useNavigate } from "react-router-dom";
 
-const OnboardingFourPage = () => {
+
+const OnboardingFourPage = () => { 
+  const navigate = useNavigate()
   return (
     <div className='card'>
       <div className='card__content'>
         <div className='card__img'>
-          <img src={Singer} alt='' />
+          <img src={Photo4} alt='' />
         </div>
         <div className='card__text'>
           <p>Choose your style</p>
@@ -20,7 +23,7 @@ const OnboardingFourPage = () => {
           type='button'
           value='Get Started'
           className='card__btn'
-          onClick={Login}
+          onClick={()=> navigate("/login")}
         />
       </div>
     </div>

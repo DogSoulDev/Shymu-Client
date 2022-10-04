@@ -1,5 +1,5 @@
 import OnboardingThirdPage from "./OnboardingThirdPage";
-import Singer from "../../../img/singer-first_page.jpg";
+import Singer from "../../../img/photo2.jpg";
 import "./onboarding.css";
 
 const OnboardingSecondPage = ({

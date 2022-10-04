@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import "./Login.css";
-import Logo from "../../../img/Logo.png";
-import Dashboard from "../../pages/Dashboard/Dashboard";
-import Register from "../SignUp/Register"
-import {Link} from "react-router-dom"
+import Logo from "../../../img/SHYMU LOGO.png";
+// import Dashboard from "../../pages/Dashboard/Dashboard";
+// import Register from "../SignUp/Register"
+// import {Link} from "react-router-dom"
+import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 function App() {
+  const navigate = useNavigate()
   // React States
   const [errorMessages, setErrorMessages] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -84,8 +87,12 @@ function App() {
           </div>
           {renderErrorMessage("userpass")}
           <div className='links'>
-            <Link to="/register">SignUp</Link>
-
+          <input
+          type='link'
+          value='SingUp'
+          className='card__btn'
+          onClick={()=> navigate("/register")}
+        />
           </div>
           <input type='submit' value='Login' />
         </form>
@@ -95,7 +102,7 @@ function App() {
 
   /* Redirection location when user is correct. Change later */
   return (
-    <div className='login-form'>{isSubmitted ? <Dashboard /> : renderForm}</div>
+    <div className='login-form'>{isSubmitted ? <Navigate replace to="/dashboard" /> : renderForm}</div>
   );
 }
 

@@ -2,7 +2,7 @@ import { useState } from "react";
 import OnboardingFirstPage from "./OnboardingFirstPage";
 
 import "./onboarding.css";
-import Logo from "../../../img/Logo.png";
+import Logo from "../../../img/SHYMU LOGO.png";
 
 const Onboarding = () => {
   const [logo, setLogo] = useState(true);

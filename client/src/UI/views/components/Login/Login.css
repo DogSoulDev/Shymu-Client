@@ -12,13 +12,13 @@
 	align-items: center;
 	min-height: 100vh;
 	flex-direction: column;
-	background: #23242a;
+	background: #ffffff;
 }
 .box {
 	position: relative;
 	width: 380px;
 	height: 420px;
-	background: #1c1c1c;
+	background: #d3d3d3;
 	border-radius: 8px;
 	overflow: hidden;
 }
@@ -31,7 +31,7 @@
 	width: 380px;
 	height: 420px;
 	transform-origin: bottom right;
-	background: linear-gradient(0deg, transparent, #7e98f4, #7e98f4);
+	background: linear-gradient(0deg, transparent, #F4694C, #F4694C);
 	animation: animate 6s linear infinite;
 }
 .box::after {
@@ -43,7 +43,7 @@
 	width: 380px;
 	height: 420px;
 	transform-origin: bottom right;
-	background: linear-gradient(0deg, transparent, #7e98f4, #7e98f4);
+	background: linear-gradient(0deg, transparent, #F4694C, #F4694C);
 	animation: animate 6s linear infinite;
 	animation-delay: -3s;
 }
@@ -66,7 +66,7 @@
 	width: 380px;
 	height: 820px;
 	transform-origin: bottom right;
-	background: linear-gradient(0deg, transparent, #7e98f4, #7e98f4);
+	background: linear-gradient(0deg, transparent, #F4694C, #F4694C);
 	animation: animate 6s linear infinite;
 }
 .boxRegister::after {
@@ -78,7 +78,7 @@
 	width: 380px;
 	height: 820px;
 	transform-origin: bottom right;
-	background: linear-gradient(0deg, transparent, #7e98f4, #7e98f4);
+	background: linear-gradient(0deg, transparent, #F4694C, #F4694C);
 	animation: animate 6s linear infinite;
 	animation-delay: -3s;
 }
@@ -94,7 +94,7 @@
 form {
 	position: absolute;
 	inset: 2px;
-	background: #28292d;
+	background: #e2e1e1;
 	padding: 50px 40px;
 	border-radius: 8px;
 	z-index: 2;
@@ -102,7 +102,7 @@ form {
 	flex-direction: column;
 }
 h1 {
-	color: white;
+	color: rgb(55, 55, 55);
 	font-weight: 400;
 	text-align: center;
 }
@@ -131,13 +131,13 @@ h1 {
 	padding: 20px 0px 10px;
 	pointer-events: none;
 	font-size: 1em;
-	color: #8f8f8f;
+	color: #F4694C;
 	letter-spacing: 0.05em;
 	transition: 0.5s;
 }
 .inputBox input:valid ~ span,
 .inputBox input:focus ~ span {
-	color: #8f8f8f;
+	color: #F4694C;
 	transform: translateX(0px) translateY(-34px);
 	font-size: 0.75em;
 }
@@ -170,13 +170,13 @@ h1 {
 }
 .links a:hover,
 .links a:nth-child(2) {
-	color: #7e98f4;
+	color: #F4694C;
 }
 input[type="submit"] {
 	width: 200px;
 	border: none;
 	padding: 15px 30px;
-	background-color: #7e98f4;
+	background-color: #F4694C;
 	border-radius: 50px;
 	font-size: 15px;
 	font-weight: bolder;
@@ -187,6 +187,7 @@ input[type="submit"] {
 	margin-left: 50px;
 	align-items: center !important;
 	justify-content: center;
+	
 }
 input[type="submit"]:active {
 	opacity: 0.8;
