@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Login.css";
-import Logo from "../../../img/SHYMU LOGO.png";
+import Logo from "../../../img/SHYMU_LOGO.png";
 // import Dashboard from "../../pages/Dashboard/Dashboard";
 // import Register from "../SignUp/Register"
 // import {Link} from "react-router-dom"

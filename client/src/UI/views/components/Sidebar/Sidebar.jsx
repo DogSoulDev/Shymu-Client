@@ -1,16 +1,20 @@
-import React from "react";
-import "./Sidebar.css"
-// import AddPlaylistIcon from "../../assets/images/add_playlist.svg";
+import { Link } from "react-router-dom";
 
-const Sidebar = () => (
+import "./Sidebar.css"
+
+const Sidebar = () => {
+  return (
   <div className="container__sidebar">
     <div className="sidebar__list">
       <div className="nav main">
         <li>
-          <a className="sidebar__titles__links" href="">Navegar</a>
+        <Link to='/home'>Home</Link>
         </li>
         <li>
-          <a className="sidebar__titles__links"  href="">Rádio</a>
+        <Link to='/search'>Search</Link>
+        </li>
+        <li>
+          <Link to='/library'>Library</Link>
         </li>
       </div>
 
@@ -56,5 +60,5 @@ const Sidebar = () => (
     </div >
  </div>
 );
-
+}
 export default Sidebar;
