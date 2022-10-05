@@ -10,7 +10,8 @@ import RepeatIcon from "../../../img/repeat.svg";
 // import PauseIcon from "../../../img/pause.svg";
 
 
-const Player = () => (
+const Player = () => {
+return (
   <div className="container__player">
     <div className="current">
       <img className="img__player "src="" alt="Cover" />
@@ -62,5 +63,5 @@ const Player = () => (
     </div>
   </div>
 );
-
+}
 export default Player;

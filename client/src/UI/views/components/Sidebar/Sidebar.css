@@ -1,9 +1,8 @@
 .container__sidebar{
-  height: 100%;
-  width: 200px;
-  background: #121212;
+  height: 100vh;
+  width: 20vw;
+  background: #2c2c2c;
   color: #b3b3b3;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
