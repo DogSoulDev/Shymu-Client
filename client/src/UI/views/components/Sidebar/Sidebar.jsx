@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom";
+import Home from "../../pages/Home/Home";
+import Library from "../../pages/Library/Library";
+import Search from "../../pages/Search/Search";
 
 import "./Sidebar.css";
 
@@ -8,13 +11,13 @@ const Sidebar = () => {
       <div className='sidebar__list'>
         <div className='nav main'>
           <li>
-            <Link className="sidebar__links" to='/home'>Home</Link>
+            <Home />
           </li>
           <li>
-            <Link className="sidebar__links" to='/search'>Search</Link>
+            <Library />
           </li>
           <li>
-            <Link className="sidebar__links" to='/library'>Library</Link>
+            <Search />
           </li>
         </div>
       </div>

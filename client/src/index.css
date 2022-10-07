@@ -1,9 +1,15 @@
-*{
+body {
+    font-size: 1.6rem;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
     box-sizing: border-box;
 }
-html, body {
-	margin: 0;
-    padding: 0;
-    height: 100%;
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
-

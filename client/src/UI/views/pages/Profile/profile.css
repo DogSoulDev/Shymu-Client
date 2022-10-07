@@ -1,0 +1,27 @@
+.editProfile {
+    max-width: 40vw;
+}
+.prueba{
+    background-color: aqua;
+}
+h2, p {
+    color: black;
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+}
+input {
+    border: none;
+    border-radius: 5px;
+}
+
+.editProfile__fields {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 30vw;
+}

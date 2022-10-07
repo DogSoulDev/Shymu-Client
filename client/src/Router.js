@@ -7,6 +7,7 @@ import Dashboard from "./UI/views/pages/Dashboard/Dashboard";
 import Home from "./UI/views/pages/Home/Home";
 import Library from "./UI/views/pages/Library/Library";
 import Search from "./UI/views/pages/Search/Search";
+import EditProfile from "./UI/views/pages/Profile/EditProfile";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { UserDataContextProvider } from "./contexts/UserDataContext";
 
@@ -26,6 +27,7 @@ const Router = () => {
 					<Route path="/home" element={<Home/>}/>
 					<Route path="/search" element={<Search/>}/>
 					<Route path="/library" element={<Library/>}/>
+					<Route path="/editprofile" element={<EditProfile />} />
 					<Route path='*' element={<Error404 />} />
 				</Routes>
 			</BrowserRouter>
