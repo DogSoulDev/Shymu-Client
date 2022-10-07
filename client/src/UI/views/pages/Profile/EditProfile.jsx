@@ -1,19 +1,24 @@
 import { useState, useEffect } from "react";
+import Error from "../../components/Error/ErrorFields";
 import "./profile.css";
 
 const EditProfile = () => {
+ const [id, setId] = useState("");
  const [name, setName] = useState("");
  const [lastName, setLastName] = useState("");
  const [userName, setUserName] = useState("");
  const [email, setEmail] = useState("");
+ //error state message
+ const [error, setError] = useState(false);
 
- //Example id
- const id = 1;
+ //*Example id
+ const exampleId = 1;
  useEffect(() => {
   const getUserData = async () => {
    //!here is the path to be defined later in the backend
-   const request = await fetch(`http://localhost:3005/userData/${id}`);
+   const request = await fetch(`http://localhost:3005/userData/${exampleId}`);
    const response = await request.json();
+   setId(response.id);
    setName(response.name);
    setLastName(response.lastName);
    setUserName(response.userName);
@@ -21,23 +26,43 @@ const EditProfile = () => {
   };
   getUserData();
  }, []);
-
+ const patchUserData = async () => {
+  await fetch();
+ };
  //this function is for each onChange of the inputs
  const handleSubmit = (e) => {
   e.preventDefault();
+
+  if (
+   name.length <= 0 ||
+   lastName.length <= 0 ||
+   userName.length <= 0 ||
+   email.length <= 0 || !email.includes('@')
+  ) {
+   setError(true);
+   return;
+  }
+  setError(false);
   //!this object will be sent to the backend with the patch method
   const objDataUser = {
+   id,
    name,
    lastName,
    userName,
    email,
   };
+  console.log(objDataUser);
  };
 
  return (
   <div className='editProfile'>
    <h2 className='prueba'>Edit your profile</h2>
-   <form className='' onSubmit={handleSubmit}>
+   <form className='' onSubmit={handleSubmit} key={id}>
+    {error && (
+     <Error>
+      <p>All fields are required</p>
+     </Error>
+    )}
     <div className='editProfile__fields'>
      <label htmlFor='name' className=''>
       Name
@@ -46,10 +71,9 @@ const EditProfile = () => {
       id='name'
       type='text'
       placeholder='Complete Name'
-      defaultValue={name}
+      value={name}
       onChange={(e) => setName(e.target.value)}
       className=''
-      required
      />
     </div>
 
@@ -61,10 +85,9 @@ const EditProfile = () => {
       id='lastname'
       type='text'
       placeholder='Your lastname'
-      defaultValue={lastName}
+      value={lastName}
       onChange={(e) => setLastName(e.target.value)(e.target.value)}
       className=''
-      required
      />
     </div>
 
@@ -76,10 +99,9 @@ const EditProfile = () => {
       id='username'
       type='text'
       placeholder='Your lastname'
-      defaultValue={userName}
+      value={userName}
       onChange={(e) => setUserName(e.target.value)}
       className=''
-      required
      />
     </div>
 
@@ -91,10 +113,9 @@ const EditProfile = () => {
       id='email'
       type='text'
       placeholder='example@example.com'
-      defaultValue={email}
+      value={email}
       onChange={(e) => setEmail(e.target.value)}
       className=''
-      required
      />
     </div>
     <input value='Edit Profile' type='submit' className='' />
