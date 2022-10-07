@@ -86,7 +86,7 @@ const EditProfile = () => {
       type='text'
       placeholder='Your lastname'
       value={lastName}
-      onChange={(e) => setLastName(e.target.value)(e.target.value)}
+      onChange={(e) => setLastName(e.target.value)}
       className=''
      />
     </div>
