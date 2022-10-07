@@ -1,16 +1,11 @@
 import { useState, useEffect } from "react";
-import Error from "../../components/Error/ErrorFields";
 import "./profile.css";
 
 const EditProfile = () => {
- const [form, setForm] = useState({
-  id: "",
-  name: "",
-  lastName: "",
-  userName: "",
-  email: "",
- });
- const { name, lastName, userName, email } = form;
+ const [name, setName] = useState("");
+ const [lastName, setLastName] = useState("");
+ const [userName, setUserName] = useState("");
+ const [email, setEmail] = useState("");
 
  //Example id
  const id = 1;
@@ -19,36 +14,30 @@ const EditProfile = () => {
    //!here is the path to be defined later in the backend
    const request = await fetch(`http://localhost:3005/userData/${id}`);
    const response = await request.json();
-   setForm(response);
+   setName(response.name);
+   setLastName(response.lastName);
+   setUserName(response.userName);
+   setEmail(response.email);
   };
   getUserData();
- }, [setForm]);
+ }, []);
 
- //Error fields message
- //const [error, setError] = useState(false);
  //this function is for each onChange of the inputs
- const handleValueForm = (e) => setForm(e.target.value);
-
  const handleSubmit = (e) => {
   e.preventDefault();
-  console.log(form);
-
-  // if ({ name, lastName, userName, email }.includes('1')) {
-  //   setError(true);
-  //   return;
-  // }
-  // setError(false);
+  //!this object will be sent to the backend with the patch method
+  const objDataUser = {
+   name,
+   lastName,
+   userName,
+   email,
+  };
  };
 
  return (
   <div className='editProfile'>
    <h2 className='prueba'>Edit your profile</h2>
    <form className='' onSubmit={handleSubmit}>
-    {/* {error && (
-          <Error>
-            <p>All fields are required</p>
-          </Error>
-        )} */}
     <div className='editProfile__fields'>
      <label htmlFor='name' className=''>
       Name
@@ -57,9 +46,10 @@ const EditProfile = () => {
       id='name'
       type='text'
       placeholder='Complete Name'
-      defaultValue={form.name}
-      onChange={handleValueForm}
+      defaultValue={name}
+      onChange={(e) => setName(e.target.value)}
       className=''
+      required
      />
     </div>
 
@@ -71,9 +61,10 @@ const EditProfile = () => {
       id='lastname'
       type='text'
       placeholder='Your lastname'
-      defaultValue={form.lastName}
-      onChange={handleValueForm}
+      defaultValue={lastName}
+      onChange={(e) => setLastName(e.target.value)(e.target.value)}
       className=''
+      required
      />
     </div>
 
@@ -85,9 +76,10 @@ const EditProfile = () => {
       id='username'
       type='text'
       placeholder='Your lastname'
-      defaultValue={form.userName}
-      onChange={handleValueForm}
+      defaultValue={userName}
+      onChange={(e) => setUserName(e.target.value)}
       className=''
+      required
      />
     </div>
 
@@ -99,9 +91,10 @@ const EditProfile = () => {
       id='email'
       type='text'
       placeholder='example@example.com'
-      defaultValue={form.email}
-      onChange={handleValueForm}
+      defaultValue={email}
+      onChange={(e) => setEmail(e.target.value)}
       className=''
+      required
      />
     </div>
     <input value='Edit Profile' type='submit' className='' />
