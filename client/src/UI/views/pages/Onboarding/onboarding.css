@@ -1,47 +1,90 @@
-.card{
-    background: #fff;
-    height: 100vh;
-    max-width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+@import url("https://fonts.googleapis.com/css?family=Inter:400,600,800|Mulish:700,500|Poppins:500,600|Roboto:500|Plus+Jakarta+Sans:800");
+
+.card {
+  background: #fff;
 }
 
 .card__content {
-    justify-content: center;
-    max-width: 40vw;
-    max-height: 100vh;
 }
 .card__logo {
-    width: 620px;
-    height: 280px;
+  width: 620px;
+  height: 280px;
 }
 .card__img img {
-    height: 50%;
-    width: 100%;
+  height: 450px;
+  object-fit: cover;
+  width: 428px;
+  border-radius: 0px 0px 0px 60px;
 }
 .card__text {
-    text-transform: uppercase;
-    color: black;
-    font-size: 1rem;
-    text-align: start;
 }
-.card__title {
-    font-weight: bold;
-    font-size: 2rem;
-}
-.card__description{
-    font-weight: lighter;
-    text-transform: none;
+.card__description {
 }
 
 .card__btn {
-    width: 100%;
-    padding: 10px;
-    margin-top: 15px;
-    border: none;
-    background-color: orangered;
-    color: #fff;
-    border-radius: 15px;
+  background-color: var(--outrageous-orange);
+  border: 1px none;
+  border-radius: 10px;
+  height: 50px;
+  width: 158px;
+}
+.title_-onboarding {
+  letter-spacing: 0;
+  min-height: 49px;
+  width: 330px;
+  margin-left: 15px;
+}
+
+.onbarding_-title {
+  letter-spacing: 0;
+  min-height: 58px;
+  margin-left: 15px;
+}
+
+.onboarding_-text {
+  letter-spacing: 0;
+  min-height: 42px;
+  width: 315px;
+  margin-left: 15px;
+}
+
+.back-1 {
+  letter-spacing: 0;
+  min-height: 19px;
+  text-align: center;
+}
+
+.BackNext {
+  display: flex;
+  column-gap: 20px;
+  justify-content: space-between;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+/* slider */
+
+.slider {
+  justify-content: center;
+  display: flex;
+  gap: 8px;
+  margin-left: 2px;
+  margin-top: 41px;
+  min-width: 46px;
+}
+
+.rectangle-5 {
+  background-color: var(--outrageous-orange);
+  border: 1px none;
+  border-radius: 10px;
+  height: 5px;
+  width: 20px;
+}
+
+.ellipse {
+  background-color: var(--outrageous-orange);
+  border: 1px none;
+  border-radius: 2.5px;
+  height: 5px;
+  width: 5px;
 }
