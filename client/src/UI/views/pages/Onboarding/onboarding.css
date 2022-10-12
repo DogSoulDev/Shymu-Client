@@ -10,7 +10,7 @@
 .card__logo {
 }
 .card__img2 {
-margin-top: -40px;
+  margin-top: 0px;
 }
 
 .card__img img {
@@ -43,7 +43,7 @@ margin-top: -40px;
   display: block;
   height: 162px;
   object-fit: cover;
-  width: 345px;
+  margin: auto;
 }
 
 .shymu_logo.animate-enter {
