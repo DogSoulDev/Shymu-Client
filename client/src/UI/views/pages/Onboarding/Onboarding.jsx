@@ -2,7 +2,8 @@ import { useState } from "react";
 import OnboardingFirstPage from "./OnboardingFirstPage";
 
 import "./onboarding.css";
-import Logo from "../../../img/SHYMU LOGO.png";
+import "./styleguide.css";
+import Logo from "../../../img/shymu-logo-1@2x.png";
 
 const Onboarding = () => {
   const [logo, setLogo] = useState(true);
@@ -15,11 +16,12 @@ const Onboarding = () => {
   };
 
   return (
-    <div className='card'>
+    <div className="shymu_logo animate-enter">
       {logo ? (
-        <div className='card'>
-          <img src={Logo} onClick={handleLogo} alt='' className='card__logo' />
+        <div className="bg-splash">
+          <img  src={Logo} onClick={handleLogo} alt='' className='shymu_logo' />
         </div>
+        
       ) : (
         <OnboardingFirstPage
             btnFirstPage={btnFirstPage}
@@ -30,8 +32,13 @@ const Onboarding = () => {
             setBtnThirdPage={setBtnThirdPage}
         />
       )}
+      
     </div>
+    
+    
   );
 };
+
+
 
 export default Onboarding;
