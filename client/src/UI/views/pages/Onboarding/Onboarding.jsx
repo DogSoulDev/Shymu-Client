@@ -17,13 +17,15 @@ const Onboarding = () => {
        }, 8000);
  }, [])
 
+ const handleLogo = () => {setLogo(false)}
+
   return (
     <div className="splash_card">
       {logo ? (
         <div className='intro'>
      <div className='overlap-group'>
       <div className='skip inter-normal-outrageous-orange-14px'>skip</div>
-      <div className='logo-container'>
+      <div onClick={handleLogo} className='logo-container'> 
        <div className='logo-sub-title'>
         <span className='span0'>Matching never sounded so </span>
         <span className='span1'>good</span>
@@ -35,6 +37,7 @@ const Onboarding = () => {
         
       ) : (
         <OnboardingFirstPage
+            setLogo={setLogo}
             btnFirstPage={btnFirstPage}
             setBtnFirstPage={setBtnFirstPage}
             btnSecondPage={btnSecondPage}

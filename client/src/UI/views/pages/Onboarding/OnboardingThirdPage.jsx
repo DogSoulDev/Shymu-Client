@@ -7,6 +7,8 @@ const OnboardingThirdPage = ({ btnThirdPage, setBtnThirdPage }) => {
   const handleBtnThirdPage = () => {
     setBtnThirdPage(false);
   };
+
+
   
   return (
     <div className='card'>

@@ -5,6 +5,7 @@ import "./onboarding.css"
 import "./styleguide.css";
 
 const OnboardingFirstPage = ({
+  setLogo,
   btnFirstPage,
   setBtnFirstPage,
   btnSecondPage,
@@ -15,12 +16,15 @@ const OnboardingFirstPage = ({
   const handleBtnFirstPage = () => {
     setBtnFirstPage(false);
   };
+  const handleBtnBack = () => {
+    setLogo(true)
+  };
   return (
     <div className='card'>
       {btnFirstPage ? (
          <div className='card__content'>
          <div className='card__img'>
-            <img src={Singer} />
+            <img src={Singer} alt='Bg-img'/>
           
             <h1 className="title_-onboarding plusjakartasans-extra-bold-white-48px">
                 <span className="plusjakartasans-extra-bold-ship-gray-48px">CONNECT</span>
@@ -38,7 +42,7 @@ const OnboardingFirstPage = ({
             type='button'
             value='← BACK'
             className='card__btn back-1 inter-semi-bold-white-16px '
-            onClick={handleBtnFirstPage}
+            onClick={handleBtnBack}
           />
           <input
             type='button'
@@ -59,6 +63,7 @@ const OnboardingFirstPage = ({
       ) 
       : (
         <OnboardingSecondPage
+          setBtnFirstPage={setBtnFirstPage}
           btnSecondPage={btnSecondPage}
           setBtnSecondPage={setBtnSecondPage}
           btnThirdPage={btnThirdPage}

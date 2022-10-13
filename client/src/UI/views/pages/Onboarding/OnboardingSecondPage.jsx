@@ -3,6 +3,7 @@ import Singer from "../../../img/photo2.jpg";
 import "./onboarding.css";
 
 const OnboardingSecondPage = ({
+  setBtnFirstPage,
   btnSecondPage,
   setBtnSecondPage,
   btnThirdPage,
@@ -11,6 +12,11 @@ const OnboardingSecondPage = ({
   const handleBtnSecondPage = () => {
     setBtnSecondPage(false);
   };
+
+  const handleBtnBack = () => {
+    setBtnFirstPage(true)
+  };
+
   return (
     <div className='card'>
       {btnSecondPage ? (
@@ -35,7 +41,7 @@ const OnboardingSecondPage = ({
             type='button'
             value='← BACK'
             className='card__btn back-1 inter-semi-bold-white-16px '
-            onClick={handleBtnSecondPage}
+            onClick={handleBtnBack}
           />
           <input
             type='button'
@@ -52,6 +58,7 @@ const OnboardingSecondPage = ({
         </div>
       ) : (
         <OnboardingThirdPage
+          setBtnSecondPage={setBtnSecondPage}
           btnThirdPage={btnThirdPage}
           setBtnThirdPage={setBtnThirdPage}
         />
