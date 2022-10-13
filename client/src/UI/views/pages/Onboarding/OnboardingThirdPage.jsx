@@ -16,7 +16,7 @@ const OnboardingThirdPage = ({ btnThirdPage, setBtnThirdPage }) => {
             <img className='card__img2' src={Singer} alt='' />
           </div>
           <div className="icon-play">
-            <div className="overlap-group">
+            <div className="circle-play">
               <img className="vector" src={vector} alt="Vector" />
            </div>
          </div>
