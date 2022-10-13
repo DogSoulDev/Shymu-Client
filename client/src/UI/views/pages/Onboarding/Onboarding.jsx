@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import OnboardingFirstPage from "./OnboardingFirstPage";
-
 import "./onboarding.css";
 import "./styleguide.css";
 import Logo from "../../../img/shymu-logo-1@2x.png";
@@ -14,7 +14,7 @@ const Onboarding = () => {
   useEffect(() => {
     setTimeout(() => {
         setLogo(false);
-       }, 8000);
+       }, 800000);
  }, [])
 
  const handleLogo = () => {setLogo(false)}
@@ -24,7 +24,9 @@ const Onboarding = () => {
       {logo ? (
         <div className='intro'>
      <div className='overlap-group'>
+      <Link className='linkSkip' to='/login'>
       <div className='skip inter-normal-outrageous-orange-14px'>skip</div>
+      </Link>
       <div onClick={handleLogo} className='logo-container'> 
        <div className='logo-sub-title'>
         <span className='span0'>Matching never sounded so </span>

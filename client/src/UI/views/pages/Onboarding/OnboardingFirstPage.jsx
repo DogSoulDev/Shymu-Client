@@ -1,4 +1,5 @@
 import OnboardingSecondPage from "./OnboardingSecondPage";
+import { Link } from "react-router-dom";
 
 import Singer from "../../../img/photo1.jpg";
 import "./onboarding.css"
@@ -20,12 +21,16 @@ const OnboardingFirstPage = ({
     setLogo(true)
   };
   return (
+    
     <div className='card'>
+      <Link className='linkSkip' to='/login'>
+      <div className='skip inter-normal-outrageous-orange-14px'>skip</div>
+      </Link>
       {btnFirstPage ? (
          <div className='card__content'>
          <div className='card__img'>
             <img src={Singer} alt='Bg-img'/>
-          
+            
             <h1 className="title_-onboarding plusjakartasans-extra-bold-white-48px">
                 <span className="plusjakartasans-extra-bold-ship-gray-48px">CONNECT</span>
                 <span className="plusjakartasans-extra-bold-outrageous-orange-48px">.</span>
