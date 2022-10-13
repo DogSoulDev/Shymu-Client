@@ -1,37 +1,51 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import OnboardingFirstPage from "./OnboardingFirstPage";
 
 import "./onboarding.css";
 import Logo from "../../../img/SHYMU_LOGO.png";
 
 const Onboarding = () => {
-  const [logo, setLogo] = useState(true);
-  const [btnSecondPage, setBtnSecondPage] = useState(true);
-  const [btnFirstPage, setBtnFirstPage] = useState(true);
-  const [btnThirdPage, setBtnThirdPage] = useState(true);
+ const [logo, setLogo] = useState(true);
+ const [btnSecondPage, setBtnSecondPage] = useState(true);
+ const [btnFirstPage, setBtnFirstPage] = useState(true);
+ const [btnThirdPage, setBtnThirdPage] = useState(true);
 
-  const handleLogo = () => {
-    setLogo(false);
-  };
+ useEffect(() => {
+    setTimeout(() => {
+        setLogo(false);
+       }, 8000);
+ }, [])
+ 
+ 
+ 
 
-  return (
-    <div className='card'>
-      {logo ? (
-        <div className='card'>
-          <img src={Logo} onClick={handleLogo} alt='' className='card__logo' />
-        </div>
-      ) : (
-        <OnboardingFirstPage
-            btnFirstPage={btnFirstPage}
-            setBtnFirstPage={setBtnFirstPage}
-            btnSecondPage={btnSecondPage}
-            setBtnSecondPage={setBtnSecondPage}
-            btnThirdPage={btnThirdPage}
-            setBtnThirdPage={setBtnThirdPage}
-        />
-      )}
+ return (
+  <div className='card'>
+   {logo ? (
+    <div className='intro'>
+     <div className='overlap-group'>
+      <div className='skip inter-normal-outrageous-orange-14px'>skip</div>
+      <div className='logo-container'>
+       <div className='logo-sub-title'>
+        <span className='span0'>Matching never sounded so </span>
+        <span className='span1'>good</span>
+       </div>
+       <img src={Logo} alt='shymu_logo' className='shymu_logo animate-enter' />
+      </div>
+     </div>
     </div>
-  );
+   ) : (
+    <OnboardingFirstPage
+     btnFirstPage={btnFirstPage}
+     setBtnFirstPage={setBtnFirstPage}
+     btnSecondPage={btnSecondPage}
+     setBtnSecondPage={setBtnSecondPage}
+     btnThirdPage={btnThirdPage}
+     setBtnThirdPage={setBtnThirdPage}
+    />
+   )}
+  </div>
+ );
 };
 
 export default Onboarding;

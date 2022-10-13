@@ -1,14 +1,106 @@
 .card{
-    background: #fff;
-    height: 100vh;
-    max-width: 100vw;
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    pointer-events: none;
+    width: 100vw;
+    height: 100vh;
 }
+.intro {
+    display: flex;
+    align-items: flex-start;
+    background-color: var(--white);
+    border: 0.38px none;
+    height: 928px;
+    width: 428px;
+  }
+  
+  .overlap-group {
+    background-image: url(../../../img/bg-splash-1@1x.png);
+    align-items: flex-end;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 193px;
+    min-height: 928px;
+    padding: 14.6px 41px;
+    width: 428px;
+  }
+  
+  .skip {
+    cursor: pointer;
+    letter-spacing: 0;
+    margin-right: 6px;
+    min-height: 17px;
+    min-width: 31px;
+    text-align: center;
+  }
+  
+  .logo-container {
+    height: 162px;
+    position: relative;
+    width: 345px;
+    cursor: pointer;
+  }
+  
+  .logo-sub-title {
+    color: transparent;
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    left: 19px;
+    letter-spacing: 0;
+    line-height: 45px;
+    position: absolute;
+    text-align: center;
+    top: 109px;
+    white-space: nowrap;
+    width: 306px;
+  }
+  
+  .span0 {
+    color: var(--outrageous-orange);
+    font-weight: 600;
+  }
+  
+  .span1 {
+    color: var(--yellow-orange);
+    font-weight: 800;
+  }
+  
+  .shymu_logo {
+    cursor: pointer;
+    display: block;
+    height: 162px;
+    left: 0;
+    object-fit: cover;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transform: scale(1.1);
+    width: 345px;
+  }
+  
+  .shymu_logo.animate-enter {
+    animation: animate-enter-frames 0.20s ease-in-out 0.00s 1 normal forwards;
+    display: block;
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  
+  @keyframes animate-enter-frames {
+    from{opacity: 0;
+  transform: scale(1.1);
+  }
+  to{opacity: 1;
+  transform: scale(1);
+  }
+  }
+  
+  
 
-.card__content {
+/* .card__content {
     justify-content: center;
     max-width: 40vw;
     max-height: 100vh;
@@ -44,4 +136,4 @@
     background-color: orangered;
     color: #fff;
     border-radius: 15px;
-}
+} */

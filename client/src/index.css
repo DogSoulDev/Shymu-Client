@@ -1,3 +1,8 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Mulish:700,500|Poppins:500,600|Roboto:500|Inter:400,600,800|Plus+Jakarta+Sans:800");
+/* The following line is used to measure usage of this code in production. For more info see our usage billing page */
+@import url("https://px.animaapp.com/633f2428ec1956324a8197be.633f2428288f4557b37d4819.b6VOAqu.rcp.png");
+
 body {
     font-size: 1.6rem;
     max-width: 100%;
