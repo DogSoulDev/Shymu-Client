@@ -106,26 +106,18 @@
     max-height: 100vh;
 }
 .card__logo {
-    width: 620px;
-    height: 280px;
+  width: 620px;
+  height: 280px;
 }
 .card__img img {
-    height: 50%;
-    width: 100%;
+  height: 450px;
+  object-fit: cover;
+  width: 428px;
+  border-radius: 0px 0px 0px 60px;
 }
 .card__text {
-    text-transform: uppercase;
-    color: black;
-    font-size: 1rem;
-    text-align: start;
 }
-.card__title {
-    font-weight: bold;
-    font-size: 2rem;
-}
-.card__description{
-    font-weight: lighter;
-    text-transform: none;
+.card__description {
 }
 
 .card__btn {

@@ -1,0 +1,79 @@
+:root {
+  --aztec: #141818;
+  --black: #000000;
+  --dove-gray: #726e6d;
+  --gunsmoke: #81868c;
+  --outrageous-orange: #f4694c;
+  --outrageous-orange-2: #f4684c80;
+  --ship-gray: #3c3845;
+  --white: #ffffff;
+  --yellow-orange: #ffbc48;
+
+  --font-size-l: 16px;
+  --font-size-m: 15px;
+  --font-size-s: 13px;
+  --font-size-xl: 17px;
+  --font-size-xxl: 24px;
+  --font-size-xxxl: 40px;
+  --font-size-xxxxl: 48px;
+
+  --font-family-inter: "Inter", Helvetica;
+  --font-family-mulish: "Mulish", Helvetica;
+  --font-family-plus_jakarta_sans: "Plus Jakarta Sans", Helvetica;
+  --font-family-poppins: "Poppins", Helvetica;
+  --font-family-roboto: "Roboto", Helvetica;
+}
+.inter-normal-outrageous-orange-14px {
+  color: var(--outrageous-orange);
+  font-family: var(--font-family-inter);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.inter-semi-bold-white-16px {
+  color: var(--white);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.plusjakartasans-extra-bold-white-48px {
+  font-family: var(--font-family-plus_jakarta_sans);
+  font-size: var(--font-size-xxxxl);
+  font-style: normal;
+  font-weight: 800;
+}
+
+.plusjakartasans-extra-bold-ship-gray-48px {
+  color: var(--ship-gray);
+  font-family: var(--font-family-plus_jakarta_sans);
+  font-size: var(--font-size-xxxxl);
+  font-style: normal;
+  font-weight: 800;
+}
+
+.plusjakartasans-extra-bold-outrageous-orange-48px {
+  color: var(--outrageous-orange);
+  font-family: var(--font-family-plus_jakarta_sans);
+  font-size: var(--font-size-xxxxl);
+  font-style: normal;
+  font-weight: 800;
+}
+
+.inter-normal-aztec-24px {
+  color: var(--aztec);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.inter-normal-dove-gray-15px {
+  color: var(--dove-gray);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}

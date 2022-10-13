@@ -1,210 +1,205 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 .body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
-	flex-direction: column;
-	background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background: #ffffff;
 }
 .box {
-	position: relative;
-	width: 380px;
-	height: 420px;
-	background: #d3d3d3;
-	border-radius: 8px;
-	overflow: hidden;
+  position: relative;
+  width: 380px;
+  height: 420px;
+  background: #d3d3d3;
+  border-radius: 8px;
+  overflow: hidden;
 }
 .box::before {
-	content: "";
-	z-index: 1;
-	position: absolute;
-	top: -50%;
-	left: -50%;
-	width: 380px;
-	height: 420px;
-	transform-origin: bottom right;
-	background: linear-gradient(0deg, transparent, #F4694C, #F4694C);
-	animation: animate 6s linear infinite;
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  transform-origin: bottom right;
+  background: linear-gradient(0deg, transparent, #f4694c, #f4694c);
+  animation: animate 6s linear infinite;
 }
 .box::after {
-	content: "";
-	z-index: 1;
-	position: absolute;
-	top: -50%;
-	left: -50%;
-	width: 380px;
-	height: 420px;
-	transform-origin: bottom right;
-	background: linear-gradient(0deg, transparent, #F4694C, #F4694C);
-	animation: animate 6s linear infinite;
-	animation-delay: -3s;
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  transform-origin: bottom right;
+  background: linear-gradient(0deg, transparent, #f4694c, #f4694c);
+  animation: animate 6s linear infinite;
+  animation-delay: -3s;
 }
 
 .boxRegister {
-	position: relative;
-	width: 380px;
-	height: 780px;
-	background: #1c1c1c;
-	border-radius: 8px;
-	overflow: hidden;
-	margin: 25px;
+  position: relative;
+  width: 380px;
+  height: 780px;
+  background: #1c1c1c;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 25px;
 }
 .boxRegister::before {
-	content: "";
-	z-index: 1;
-	position: absolute;
-	top: -50%;
-	left: -50%;
-	width: 380px;
-	height: 820px;
-	transform-origin: bottom right;
-	background: linear-gradient(0deg, transparent, #F4694C, #F4694C);
-	animation: animate 6s linear infinite;
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 820px;
+  transform-origin: bottom right;
+  background: linear-gradient(0deg, transparent, #f4694c, #f4694c);
+  animation: animate 6s linear infinite;
 }
 .boxRegister::after {
-	content: "";
-	z-index: 1;
-	position: absolute;
-	top: -50%;
-	left: -50%;
-	width: 380px;
-	height: 820px;
-	transform-origin: bottom right;
-	background: linear-gradient(0deg, transparent, #F4694C, #F4694C);
-	animation: animate 6s linear infinite;
-	animation-delay: -3s;
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 820px;
+  transform-origin: bottom right;
+  background: linear-gradient(0deg, transparent, #f4694c, #f4694c);
+  animation: animate 6s linear infinite;
+  animation-delay: -3s;
 }
 
 @keyframes animate {
-	0% {
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(360deg);
-	}
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 form {
-	position: absolute;
-	inset: 2px;
-	background: #e2e1e1;
-	padding: 50px 40px;
-	border-radius: 8px;
-	z-index: 2;
-	display: flex;
-	flex-direction: column;
+  position: absolute;
+  inset: 2px;
+  background: #e2e1e1;
+  padding: 50px 40px;
+  border-radius: 8px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
 }
-h1 {
-	color: rgb(55, 55, 55);
-	font-weight: 400;
-	text-align: center;
-}
+
 .inputBox {
-	position: relative;
-	width: 300px;
-	margin-top: 35px;
+  position: relative;
+  width: 300px;
+  margin-top: 35px;
 }
 .inputBox input {
-	position: relative;
-	width: 100%;
-	padding: 20px 10px 10px;
-	background: transparent;
-	outline: none;
-	box-shadow: none;
-	border: none;
-	color: #23242a;
-	font-size: 1em;
-	letter-spacing: 0.05em;
-	transition: 0.5s;
-	z-index: 10;
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 10px;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  color: #23242a;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  z-index: 10;
 }
 .inputBox span {
-	position: absolute;
-	left: 0;
-	padding: 20px 0px 10px;
-	pointer-events: none;
-	font-size: 1em;
-	color: #F4694C;
-	letter-spacing: 0.05em;
-	transition: 0.5s;
+  position: absolute;
+  left: 0;
+  padding: 20px 0px 10px;
+  pointer-events: none;
+  font-size: 1em;
+  color: #f4694c;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
 }
 .inputBox input:valid ~ span,
 .inputBox input:focus ~ span {
-	color: #F4694C;
-	transform: translateX(0px) translateY(-34px);
-	font-size: 0.75em;
+  color: #f4694c;
+  transform: translateX(0px) translateY(-34px);
+  font-size: 0.75em;
 }
 .inputBox i {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	height: 2px;
-	background: #ffffff;
-	border-radius: 4px;
-	overflow: hidden;
-	transition: 0.5s;
-	pointer-events: none;
-	z-index: 9;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #ffffff;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: 0.5s;
+  pointer-events: none;
+  z-index: 9;
 }
 .inputBox input:valid ~ i,
 .inputBox input:focus ~ i {
-	height: 44px;
+  height: 44px;
 }
 .links {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .links a {
-	margin: 10px 0;
-	font-size: 0.75em;
-	color: #8f8f8f;
-	text-decoration: beige;
+  margin: 10px 0;
+  font-size: 0.75em;
+  color: #8f8f8f;
+  text-decoration: beige;
 }
 .links a:hover,
 .links a:nth-child(2) {
-	color: #F4694C;
+  color: #f4694c;
 }
 input[type="submit"] {
-	width: 200px;
-	border: none;
-	padding: 15px 30px;
-	background-color: #F4694C;
-	border-radius: 50px;
-	font-size: 15px;
-	font-weight: bolder;
-	color: white;
-	cursor: pointer;
-	margin-top: 20px;
-	margin-bottom: 30px;
-	margin-left: 50px;
-	align-items: center !important;
-	justify-content: center;
-	
+  width: 200px;
+  border: none;
+  padding: 15px 30px;
+  background-color: #f4694c;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: bolder;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  align-items: center !important;
+  justify-content: center;
 }
 input[type="submit"]:active {
-	opacity: 0.8;
+  opacity: 0.8;
 }
 
 .error {
-	color: red;
-	font-size: 10px;
+  color: red;
+  font-size: 10px;
 }
 
 img {
-	width: 200px;
-	height: auto;
-	padding-bottom: 10px;
+  width: 200px;
+  height: auto;
+  padding-bottom: 10px;
 }
 
 h6 {
-	color: white;
-	margin-top: 20px;
+  color: white;
+  margin-top: 20px;
 }
