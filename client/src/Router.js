@@ -25,15 +25,12 @@ const Router = () => {
 						<Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>}></Route>
 
 						<Route path='/' element={<App />} />
-						<Route path='/success' element={<App />} />
-						<Route path='/cancel' element={<App />} />
+						
 						<Route path='/login' element={<Login />} />
 						<Route path='/signup' element={<Signup />} />
 						<Route path="/update-profile" element={<PrivateRoute><UpdateProfile /></PrivateRoute>}></Route>
 
 						<Route path="/forgot-password" element={<ForgotPassword />}></Route>
-
-						
 						<Route path='*' element={<Error404 />} />
 					</Routes>
 					</AuthProvider>
