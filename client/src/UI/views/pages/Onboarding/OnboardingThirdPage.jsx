@@ -1,5 +1,5 @@
 import "./onboarding.css";
-import Singer from "../../../img/photo3.png";
+import Singer from "../../../img/photo3.jpg";
 import vector from "../../../img/vector.svg";
 import OnboardingFourPage from "./OnboardingFourPage";
 
@@ -12,8 +12,8 @@ const OnboardingThirdPage = ({ btnThirdPage, setBtnThirdPage }) => {
     <div className='card'>
       {btnThirdPage ? (
         <div className='card__content'>
-          <div className='card__img2'>
-            <img src={Singer} alt='' />
+          <div className='card__img3'>
+            <img className='card__img2' src={Singer} alt='' />
           </div>
           <div className="icon-play">
             <div className="overlap-group">
