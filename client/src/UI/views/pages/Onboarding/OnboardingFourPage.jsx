@@ -27,25 +27,25 @@ const OnboardingFourPage = () => {
               <span className="span_Good">good</span>
           </h1>
           </div>
-          <button className="button-email">
+          <div className="button-email">
             <div className="overlap-button-email">
               <img className="icon-mail" src={iconEmail} alt="icon-mail" />
               <div className="text-email roboto-medium-white-16px">
               Continue with Email
               </div>
             </div>
-          </button>
+          </div>
           <div className="button-container">
             <button className="button">
               <img className="icon-google" src={iconGoogle} alt="Icon - Google" />
             </button>
-            <button className="button">
+            <div className="button">
               <img className="icon-facebook" src={iconFacebook} alt="icon-facebook" />
-            </button>
+            </div>
           </div>
           <p className="not-account mulish-medium-white-16px">
             <span className="mulish-medium-white-16px">Don’t have an account? </span>
-            <button className="mulish-bold-outrageous-orange-16px">Sign Up</button>
+            <div className="mulish-bold-outrageous-orange-16px">Sign Up</div>
           </p>
           <p className="privacy-policy roboto-medium-gunsmoke-13px">
           By continuing, you agree to the Terms of Service &amp; Privacy Policy
