@@ -16,10 +16,10 @@ const OnboardingFourPage = () => {
 <div className="container-center-horizontal">
       <div className="sign-in screen">
         <div className="overlap-getStarted">
-          <div className="return inter-normal-outrageous-orange-14px">
+          <button className="return inter-normal-outrageous-orange-14px">
             <span className="inter-normal-outrageous-orange-14px">RETURN</span>
             <span className="span1-return"> ↺</span>
-          </div>
+          </button>
           <div className="overlap-group2">
             <img className="shymu_logo-1 animate-enter" src={shymu_Logo1} alt="SHYMU_LOGO 1" />
             <h1 className="heading-1 animate-enter">

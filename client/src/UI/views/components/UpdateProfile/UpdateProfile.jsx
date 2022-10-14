@@ -1,5 +1,4 @@
 import React, { useRef, useState } from "react"
-import { Form, Button, Card, Alert } from "react-bootstrap"
 import { useAuth } from "../../../../contexts/AuthContext"
 import { Link, useNavigate } from "react-router-dom"
 
@@ -43,42 +42,42 @@ export default function UpdateProfile() {
 
   return (
     <>
-      <Card>
-        <Card.Body>
+      <div>
+        <div>
           <h2 className="text-center mb-4">Update Profile</h2>
-          {error && <Alert variant="danger">{error}</Alert>}
-          <Form onSubmit={handleSubmit}>
-            <Form.Group id="email">
-              <Form.Label>Email</Form.Label>
-              <Form.Control
+          {error && <alert variant="danger">{error}</alert>}
+          <div onSubmit={handleSubmit}>
+            <div id="email">
+              <div>Email</div>
+              <div
                 type="email"
                 ref={emailRef}
                 required
                 defaultValue={currentUser.email}
               />
-            </Form.Group>
-            <Form.Group id="password">
-              <Form.Label>Password</Form.Label>
-              <Form.Control
+            </div>
+            <div id="password">
+              <div>Password</div>
+              <div
                 type="password"
                 ref={passwordRef}
                 placeholder="Leave blank to keep the same"
               />
-            </Form.Group>
-            <Form.Group id="password-confirm">
-              <Form.Label>Password Confirmation</Form.Label>
-              <Form.Control
+            </div>
+            <div id="password-confirm">
+              <div>Password Confirmation</div>
+              <div
                 type="password"
                 ref={passwordConfirmRef}
                 placeholder="Leave blank to keep the same"
               />
-            </Form.Group>
-            <Button disabled={loading} className="w-100" type="submit">
+            </div>
+            <div disabled={loading} className="w-100" type="submit">
               Update
-            </Button>
-          </Form>
-        </Card.Body>
-      </Card>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="w-100 text-center mt-2">
         <Link to="/dashboard">Cancel</Link>
       </div>

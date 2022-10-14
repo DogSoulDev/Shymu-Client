@@ -46,11 +46,6 @@ small {
   align-items: center;
   padding-top: 15px;
 }
-button {
-  background: transparent;
-  border: 0px;
-  margin: 0 px;
-}
 
 .time {
   display: flex;
