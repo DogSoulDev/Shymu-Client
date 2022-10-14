@@ -1,10 +1,12 @@
 import OnboardingSecondPage from "./OnboardingSecondPage";
+import { Link } from "react-router-dom";
 
 import Singer from "../../../img/photo1.jpg";
 import "./onboarding.css"
 import "./styleguide.css";
 
 const OnboardingFirstPage = ({
+  setLogo,
   btnFirstPage,
   setBtnFirstPage,
   btnSecondPage,
@@ -15,13 +17,20 @@ const OnboardingFirstPage = ({
   const handleBtnFirstPage = () => {
     setBtnFirstPage(false);
   };
+  const handleBtnBack = () => {
+    setLogo(true)
+  };
   return (
+    
     <div className='card'>
+      <Link className='linkSkip' to='/login'>
+      <div className='skip inter-normal-outrageous-orange-14px'>skip</div>
+      </Link>
       {btnFirstPage ? (
          <div className='card__content'>
          <div className='card__img'>
-            <img src={Singer} alt='shymu'/>
-          
+            <img src={Singer} alt='Bg-img'/>
+            
             <h1 className="title_-onboarding plusjakartasans-extra-bold-white-48px">
                 <span className="plusjakartasans-extra-bold-ship-gray-48px">CONNECT</span>
                 <span className="plusjakartasans-extra-bold-outrageous-orange-48px">.</span>
@@ -38,7 +47,7 @@ const OnboardingFirstPage = ({
             type='button'
             value='← BACK'
             className='card__btn back-1 inter-semi-bold-white-16px '
-            onClick={handleBtnFirstPage}
+            onClick={handleBtnBack}
           />
           <input
             type='button'
@@ -59,6 +68,7 @@ const OnboardingFirstPage = ({
       ) 
       : (
         <OnboardingSecondPage
+          setBtnFirstPage={setBtnFirstPage}
           btnSecondPage={btnSecondPage}
           setBtnSecondPage={setBtnSecondPage}
           btnThirdPage={btnThirdPage}

@@ -193,12 +193,6 @@ input[type="submit"]:active {
   font-size: 10px;
 }
 
-img {
-  width: 200px;
-  height: auto;
-  padding-bottom: 10px;
-}
-
 h6 {
   color: white;
   margin-top: 20px;

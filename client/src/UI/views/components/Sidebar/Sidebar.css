@@ -1,61 +1,64 @@
+<<<<<<< HEAD
 .container__sidebar{
   height: 100vh;
   width: 20vw;
   background: #2c2c2c;
+=======
+.container__sidebar {
+  height: 100%;
+  width: 200px;
+  background: #121212;
+>>>>>>> remotes/origin/Marcel-Onbarding
   color: #b3b3b3;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-
 .sidebar__list {
-    padding: 25px;
-    height: 655px;
-  }
+  padding: 25px;
+  height: 655px;
+}
 
-
-.nav{
+.nav {
   list-style: none;
   margin-top: 25px;
 }
 
 .nav:first-child {
-    margin-top: 0px;
-  }
+  margin-top: 0px;
+}
 
 .sidebar__links {
-      color: inherit;
-      text-decoration: none;
-      font-size: 13px;
-      line-height: 32px;
-      /* font-weight: ${props => (props.main ? "bold" : "normal")} */
-    }
-
-.sidebar__links:hover {
-        color: #fff;
-      }
-    
-
-.sidebar__titles {
-      font-size: 11px;
-      text-transform: uppercase;
-      line-height: 22px;
-      letter-spacing: 1.11px;
-      font-weight: bold;
-    }
-.sidebar__titles__links{
   color: inherit;
   text-decoration: none;
   font-size: 13px;
   line-height: 32px;
-  
+  /* font-weight: ${props => (props.main ? "bold" : "normal")} */
+}
+
+.sidebar__links:hover {
+  color: #fff;
+}
+
+.sidebar__titles {
+  font-size: 11px;
+  text-transform: uppercase;
+  line-height: 22px;
+  letter-spacing: 1.11px;
+  font-weight: bold;
+}
+.sidebar__titles__links {
+  color: inherit;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 32px;
 }
 .sidebar__titles__links:hover {
   color: #fff;
 }
 
-.new__playList{
+.new__playList {
   background: transparent;
   border: 0;
   border-top: 1px solid #282828;
@@ -64,13 +67,7 @@
   display: flex;
   align-items: center;
   padding: 25px;
- 
 }
 .new__playList:hover {
-    color: #fff;
-  }
-
-  img {
-    margin-right: 10px;
-  }
-
+  color: #fff;
+}

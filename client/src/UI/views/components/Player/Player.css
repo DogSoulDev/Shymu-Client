@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 .container__player{
+=======
+.container__player {
+>>>>>>> remotes/origin/Marcel-Onbarding
   height: 72px;
   display: flex;
   justify-content: space-between;
@@ -9,75 +13,73 @@
   bottom: "0";
 }
 
-.current{
+.current {
   display: flex;
   align-items: center;
 }
 .img__player {
-    width: 48px;
-    height: 48px;
-  }
+  width: 48px;
+  height: 48px;
+}
 
 .song__name {
-    margin-left: 12px;
-    display: flex;
-    flex-direction: column;
+  margin-left: 12px;
+  display: flex;
+  flex-direction: column;
 }
 
 .song__length {
-      font-size: 13px;
-      color: #121212;
-    }
+  font-size: 13px;
+  color: #121212;
+}
 
 small {
-      font-size: 11px;
-      color:#121212;
-      margin-top: 5px;
-    }
+  font-size: 11px;
+  color: #121212;
+  margin-top: 5px;
+}
 
-
-.progress{
+.progress {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.controls{
+.controls {
   display: flex;
   align-items: center;
   padding-top: 15px;
 }
 button {
-    background: transparent;
-    border: 0px;
-    margin: 0 15px;
-  }
+  background: transparent;
+  border: 0px;
+  margin: 0 px;
+}
 
-.time{
+.time {
   display: flex;
   align-items: center;
   margin-top: 5px;
 }
-.song__length{
-    font-size: 15px;
-    color: #121212;
-  }
+.song__length {
+  font-size: 15px;
+  color: #121212;
+}
 
-.progressSlider{
+.progressSlider {
   width: 500px;
   margin: 0 15px;
 }
 
-.volume{
+.volume {
   display: flex;
   align-items: center;
   width: 80px;
   margin-right: 20px;
 }
 .icon__player {
-    margin-right: 5px;
-    display: flex;
-    align-items: center;
-    width: 20px;
-  }
-
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  width: 20px;
+}
