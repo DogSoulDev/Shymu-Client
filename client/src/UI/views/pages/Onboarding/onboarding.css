@@ -225,6 +225,8 @@
   border-radius: 40px;
   height: 56px;
   width: 208px;
+  color: white;
+  font-size: 18px;
 }
 .get-started {
   color: var(--white);
