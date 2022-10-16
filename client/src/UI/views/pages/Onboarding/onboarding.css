@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Inter:400,600,800|Mulish:700,500|Poppins:500,600|Roboto:500|Plus+Jakarta+Sans:800");
 
 .card {
-  background: linear-gradient(rgb(255 255 255 / 80%), rgb(255 255 255)),
+  background: linear-gradient(#4231634f, rgb(255 255 255)),
     url(https://bit.ly/2rlzaXi);
 }
 
@@ -26,7 +26,7 @@
   justify-items: center;
   border-radius: 30px;
   gap: 7px;
-  background: linear-gradient(145deg, #ffffff, #efefef);
+  background: linear-gradient(145deg, #ffffff, #fafafb);
 }
 
 .card__img {
@@ -57,6 +57,8 @@
   margin-right: auto;
   box-shadow: 0px 38px 31px -30px rgb(17 0 0 / 50%);
   margin-bottom: 25px;
+  filter: brightness(0.8);
+  border-bottom: solid 7px #8648ff;
 }
 
 .card__text {
@@ -70,11 +72,18 @@
 }
 
 .card__btn {
-  background-color: var(--outrageous-orange);
-  border: 1px none;
-  border-radius: 10px;
   height: 50px;
   width: 158px;
+  display: inline-block;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding: 0.7em 1.7em;
+  border-radius: 0.5em;
+  background: #692be1;
+  border: 1px solid #dfdfdf;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
 }
 
 /* INTRO */
