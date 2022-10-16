@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Inter:400,600,800|Mulish:700,500|Poppins:500,600|Roboto:500|Plus+Jakarta+Sans:800");
 
 .card {
-  background: #fff;
+  background: linear-gradient(rgb(255 255 255 / 80%), rgb(255 255 255)),
+    url(https://bit.ly/2rlzaXi);
 }
 
 .splash_card {
@@ -10,14 +11,25 @@
 }
 
 .card__content {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.card__logo {
+.frameboard {
+  box-shadow: 0px 14px 40px #00000057;
+  display: grid;
+  align-content: space-around;
+  justify-content: space-around;
+  align-items: center;
+  justify-items: center;
+  border-radius: 30px;
+  gap: 7px;
+  background: linear-gradient(145deg, #ffffff, #efefef);
 }
 
 .card__img {
-  background: linear-gradient(rgb(255 255 255 / 80%), rgb(255 255 255)),
-    url(https://bit.ly/2rlzaXi);
 }
 
 .card__img2 {
@@ -38,10 +50,13 @@
 .card__img img {
   object-fit: cover;
   border-radius: 0px 0px 0px 60px;
+  max-width: -moz-fit-content;
   max-width: fit-content;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 0px 38px 31px -30px rgb(17 0 0 / 50%);
+  margin-bottom: 25px;
 }
 
 .card__text {
@@ -187,7 +202,7 @@
   justify-content: center;
   display: flex;
   gap: 8px;
-  margin: 20px auto;
+  margin: 20px 0px 70px 0px;
   min-width: 46px;
 }
 
@@ -217,6 +232,12 @@
   min-height: 28px;
   min-width: 104px;
   text-align: center;
+  white-space: nowrap;
+}
+
+.text-1 {
+  font-family: var(--font-family-poppins);
+  font-weight: 500;
   white-space: nowrap;
 }
 .bg {
@@ -506,7 +527,7 @@
 }
 .roboto-medium-gunsmoke-13px {
   color: var(--gunsmoke);
-  font-family: var(--font-family-roboto-medium);
+  font-family: "Inter";
   font-size: 12px;
   font-weight: 500;
   font-style: normal;

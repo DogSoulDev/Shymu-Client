@@ -29,22 +29,20 @@ export default function Login() {
   return (
     <>
       <div>
-        <div>
+        <div className="body_login">
           <h2 className="text-center mb-4">Log In</h2>
           {error && <alert variant="danger">{error}</alert>}
-          <div onSubmit={handleSubmit}>
-            <div id="email">
-              <div>Email</div>
-              <div type="email" ref={emailRef} required />
-            </div>
-            <div id="password">
-              <div>Password</div>
-              <div type="password" ref={passwordRef} required />
-            </div>
-            <div disabled={loading} className="w-100" type="submit">
-              Log In
-            </div>
-          </div>
+          <form onSubmit={handleSubmit}>
+            <form id="email">
+              <label for="email" >Email</label>
+              <input type="email" ref={emailRef} required />
+            </form>
+            <group id="password">
+              <label>Password</label>
+              <input type="password" ref={passwordRef} required />
+            </group>
+            <input type="submit" value="Log In"></input>
+          </form>
           <div className="w-100 text-center mt-3">
             <Link to="/forgot-password">Forgot Password?</Link>
           </div>
@@ -53,6 +51,7 @@ export default function Login() {
       <div className="w-100 text-center mt-2">
         Need an account? <Link to="/signup">Sign Up</Link>
       </div>
+      
     </>
   )
 }
