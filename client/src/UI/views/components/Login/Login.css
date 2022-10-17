@@ -30,6 +30,7 @@
   background: linear-gradient(#894cff4f, rgb(0 0 0)),
     url(http://buenasnuevas.fm/wp-content/uploads/2022/10/back_Splash.jpg);
   color: white;
+  line-height: 30px;
 }
 
 .inputField {
@@ -80,4 +81,10 @@
   line-height: 0px;
   font-weight: 400;
   margin-bottom: 10%;
+}
+
+.ShymuLogin {
+  height: 120px;
+  transform: scale(1.1);
+  margin: 0px;
 }

@@ -1,4 +1,6 @@
 import React, { useRef, useState } from "react"
+import shymu_Logo1 from "../../../img/shymu-logo-1.png";
+import Logo from "../../../img/shymu-logo-1@2x.png";
 
 import { useAuth } from "../../../../contexts/AuthContext"
 import { Link, useNavigate } from "react-router-dom"
@@ -33,6 +35,7 @@ export default function Login() {
     <>
       <div className="LoginBG" >
         <div className="LoginCard">
+          <img className="ShymuLogin animate-enter" src={Logo} alt="SHYMU_LOGO 1" />
           <h2 className="WelcomeLogin">Welcome Back!</h2>
           <p className="WelcomeLoginText">Please enter your account here</p>
           {error && <alert variant="danger">{error}</alert>}
