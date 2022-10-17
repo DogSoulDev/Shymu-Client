@@ -1,20 +1,7 @@
-<<<<<<< HEAD
-import React, { useState } from "react";
-import "./Login.css";
-import Logo from "../../../img/SHYMU_LOGO.png";
-// import Dashboard from "../../pages/Dashboard/Dashboard";
-// import Register from "../SignUp/Register"
-// import {Link} from "react-router-dom"
-import { Navigate } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
-
-
-function App() {
-=======
 import React, { useRef, useState } from "react"
-import { Form, Button, Card, Alert } from "react-bootstrap"
 import { useAuth } from "../../../../contexts/AuthContext"
 import { Link, useNavigate } from "react-router-dom"
+import Error from "../Error/ErrorFields"
 
 export default function Login() {
   const emailRef = useRef()
@@ -22,7 +9,6 @@ export default function Login() {
   const { login } = useAuth()
   const [error, setError] = useState("")
   const [loading, setLoading] = useState(false)
->>>>>>> remotes/origin/Marcel-Onbarding
   const navigate = useNavigate()
 
   async function handleSubmit(e) {
@@ -42,28 +28,28 @@ export default function Login() {
 
   return (
     <>
-      <Card>
-        <Card.Body>
+      <div>
+        <div>
           <h2 className="text-center mb-4">Log In</h2>
-          {error && <Alert variant="danger">{error}</Alert>}
-          <Form onSubmit={handleSubmit}>
-            <Form.Group id="email">
-              <Form.Label>Email</Form.Label>
-              <Form.Control type="email" ref={emailRef} required />
-            </Form.Group>
-            <Form.Group id="password">
-              <Form.Label>Password</Form.Label>
-              <Form.Control type="password" ref={passwordRef} required />
-            </Form.Group>
-            <Button disabled={loading} className="w-100" type="submit">
+          {error && <Error variant="danger">{error}</Error>}
+          <form onSubmit={handleSubmit}>
+            <div id="email">
+              <label>Email</label>
+              <input type="email" ref={emailRef} required />
+            </div>
+            <div id="password">
+              <label>Password</label>
+              <input type="password" ref={passwordRef} required />
+            </div>
+            <button disabled={loading} className="w-100" type="submit">
               Log In
-            </Button>
-          </Form>
+            </button>
+          </form>
           <div className="w-100 text-center mt-3">
             <Link to="/forgot-password">Forgot Password?</Link>
           </div>
-        </Card.Body>
-      </Card>
+        </div>
+      </div>
       <div className="w-100 text-center mt-2">
         Need an account? <Link to="/signup">Sign Up</Link>
       </div>

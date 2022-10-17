@@ -1,104 +1,8 @@
-.card{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    pointer-events: none;
-    width: 100vw;
-    height: 100vh;
+@import url("https://fonts.googleapis.com/css?family=Inter:400,600,800|Mulish:700,500|Poppins:500,600|Roboto:500|Plus+Jakarta+Sans:800");
+
+.card {
+  background: #fff;
 }
-.intro {
-    display: flex;
-    align-items: flex-start;
-    background-color: var(--white);
-    border: 0.38px none;
-    height: 928px;
-    width: 428px;
-  }
-  
-  .overlap-group {
-    background-image: url(../../../img/bg-splash-1@1x.png);
-    align-items: flex-end;
-    background-position: 50% 50%;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    gap: 193px;
-    min-height: 928px;
-    padding: 14.6px 41px;
-    width: 428px;
-  }
-  
-  .skip {
-    cursor: pointer;
-    letter-spacing: 0;
-    margin-right: 6px;
-    min-height: 17px;
-    min-width: 31px;
-    text-align: center;
-  }
-  
-  .logo-container {
-    height: 162px;
-    position: relative;
-    width: 345px;
-    cursor: pointer;
-  }
-  
-  .logo-sub-title {
-    color: transparent;
-    font-family: var(--font-family-inter);
-    font-size: var(--font-size-xl);
-    font-weight: 600;
-    left: 19px;
-    letter-spacing: 0;
-    line-height: 45px;
-    position: absolute;
-    text-align: center;
-    top: 109px;
-    white-space: nowrap;
-    width: 306px;
-  }
-  
-  .span0 {
-    color: var(--outrageous-orange);
-    font-weight: 600;
-  }
-  
-  .span1 {
-    color: var(--yellow-orange);
-    font-weight: 800;
-  }
-  
-  .shymu_logo {
-    cursor: pointer;
-    display: block;
-    height: 162px;
-    left: 0;
-    object-fit: cover;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    transform: scale(1.1);
-    width: 345px;
-  }
-  
-  .shymu_logo.animate-enter {
-    animation: animate-enter-frames 0.20s ease-in-out 0.00s 1 normal forwards;
-    display: block;
-    opacity: 0;
-    transform: scale(1.1);
-  }
-  
-  @keyframes animate-enter-frames {
-    from{opacity: 0;
-  transform: scale(1.1);
-  }
-  to{opacity: 1;
-  transform: scale(1);
-  }
-  }
-  
-  
 
 .splash_card {
   display: block;
@@ -107,8 +11,6 @@
 
 .card__content {
   display: block;
-}
-.card__logo {
 }
 
 .card__img {
@@ -119,11 +21,12 @@
 .card__img2 {
   object-fit: cover;
   border-radius: 0px 0px 190px 190px;
+  max-width: -moz-fit-content;
   max-width: fit-content;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0px 24px 20px #22222261;
+  box-shadow: 0px 14px 40px #00000057;
 }
 .card__img3 {
   background: linear-gradient(rgb(255 255 255 / 80%), rgb(255 255 255)),
@@ -139,11 +42,6 @@
   margin-right: auto;
 }
 
-.card__text {
-}
-.card__description {
-}
-
 .linkSkip {
   position: fixed;
   margin: 20px 40px;
@@ -155,6 +53,7 @@
   border-radius: 10px;
   height: 50px;
   width: 158px;
+  cursor: pointer;
 }
 
 /* INTRO */
@@ -171,9 +70,9 @@
 }
 
 .logo-container {
-  height: 162px;
+  height: 370px;
   position: relative;
-  width: 345px;
+  width: 370px;
   margin: auto;
 }
 
@@ -182,14 +81,13 @@
   font-family: var(--font-family-inter);
   font-size: var(--font-size-xl);
   font-weight: 600;
-  left: 19px;
+  left: 40px;
   letter-spacing: 0;
   line-height: 45px;
-  position: absolute;
   text-align: center;
   top: 109px;
   white-space: nowrap;
-  width: 306px;
+  z-index: 1;
 }
 
 .span0 {
@@ -204,15 +102,14 @@
 
 .shymu_logo {
   cursor: pointer;
-  display: block;
-  height: 162px;
-  left: 0;
+  height: 115px;
   object-fit: cover;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  transform: scale(1.1);
-  width: 345px;
+  width: -webkit-fill-available;
+  background: linear-gradient(rgb(73 24 24), #873e2e1f);
+  border-radius: 60px;
+  box-shadow: 0px 14px 40px #00000057;
+  border-bottom: solid 1px #ff880854;
+  backdrop-filter: blur(2px);
 }
 
 .shymu_logo.animate-enter {
@@ -322,6 +219,8 @@
   border-radius: 40px;
   height: 56px;
   width: 208px;
+  color: white;
+  font-size: 18px;
 }
 .get-started {
   color: var(--white);
@@ -362,6 +261,7 @@
   justify-content: flex-end;
   padding: 33.8px 34.1px;
   margin: -70px auto;
+  box-shadow: 0px 4px 40px #00000040;
 }
 
 .overlap-group {
@@ -371,10 +271,12 @@
   justify-content: flex-end;
   padding: 33.8px 34.1px;
   margin: auto;
-  background-image: url(http://localhost:3000/static/media/bg-splash.836896c8091ec91ac4f4.jpg);
   width: -webkit-fill-available;
   background-repeat: no-repeat;
   background-position: center;
+  background-image: linear-gradient(rgb(0 0 0 / 80%), #bf381ad4),
+    url(https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-size: cover;
 }
 
 .vector {
@@ -479,8 +381,7 @@
   letter-spacing: 0;
   line-height: 45px;
   position: absolute;
-  top: 57px;
-  transform: translate(-25px, 0);
+  top: 27px;
   width: 306px;
 }
 

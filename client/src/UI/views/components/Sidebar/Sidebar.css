@@ -1,14 +1,7 @@
-<<<<<<< HEAD
-.container__sidebar{
-  height: 100vh;
-  width: 20vw;
-  background: #2c2c2c;
-=======
 .container__sidebar {
   height: 100%;
   width: 200px;
   background: #121212;
->>>>>>> remotes/origin/Marcel-Onbarding
   color: #b3b3b3;
   display: flex;
   flex-direction: column;
