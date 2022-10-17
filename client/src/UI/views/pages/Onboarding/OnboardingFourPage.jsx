@@ -4,6 +4,7 @@ import shymu_Logo1 from "../../../img/shymu-logo-1.png";
 import iconEmail from "../../../img/icon-email.svg";
 import iconGoogle from "../../../img/icon-google.svg";
 import iconFacebook from "../../../img/icon-facebook.svg";
+import { Link } from "react-router-dom";
 
 import { useNavigate } from "react-router-dom";
 
@@ -27,6 +28,7 @@ const OnboardingFourPage = () => {
               <span className="span_Good">good</span>
           </h1>
           </div>
+          <Link className='linkSkip' to='/login'>
           <div className="button-email">
             <div className="overlap-button-email">
               <img className="icon-mail" src={iconEmail} alt="icon-mail" />
@@ -35,6 +37,7 @@ const OnboardingFourPage = () => {
               </div>
             </div>
           </div>
+          </Link>
           <div className="button-container">
             <button className="button">
               <img className="icon-google" src={iconGoogle} alt="Icon - Google" />
