@@ -31,30 +31,30 @@ export default function Login() {
 
   return (
     <>
-      <div>
+      <div className="LoginBG" >
         <div className="LoginCard">
-          <h2 className="plusjakartasans-extra-bold-ship-gray-48px">Log In</h2>
+          <h2 className="WelcomeLogin">Welcome Back!</h2>
+          <p className="WelcomeLoginText">Please enter your account here</p>
           {error && <alert variant="danger">{error}</alert>}
           <form onSubmit={handleSubmit}>
-            <form className="inter-normal-aztec-24px" id="email">
+            <form className="inter-normal-dove-gray-15px" id="email">
               <label for="email" >Email</label>
               <input className="inputField" type="email" ref={emailRef} required />
             </form>
-            <group className="inter-normal-aztec-24px" id="password">
+            <group className="inter-normal-dove-gray-15px" id="password">
               <label>Password</label>
               <input className="inputField" type="password" ref={passwordRef} required />
             </group>
             <input className="loginBtn inter-semi-bold-white-16px " type="submit" value="Log In"></input>
           </form>
-          <div className="w-100 text-center mt-3">
+          <div className="mulish-medium-white-16px">
             <Link to="/forgot-password">Forgot Password?</Link>
           </div>
-        </div>
-      </div>
-      <div className="w-100 text-center mt-2">
+          <div className="mulish-medium-white-16px">
         Need an account? <Link to="/signup">Sign Up</Link>
       </div>
-      
+        </div>
+      </div>
     </>
   )
 }

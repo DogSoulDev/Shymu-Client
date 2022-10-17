@@ -77,3 +77,11 @@
   font-style: normal;
   font-weight: 400;
 }
+
+.mulish-medium-white-16px {
+  color: var(--white);
+  font-family: var(--font-family-mulish);
+  font-size: var(--font-size-m2);
+  font-weight: 500;
+  font-style: normal;
+}
