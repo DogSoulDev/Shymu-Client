@@ -3,6 +3,9 @@ import React, { useRef, useState } from "react"
 import { useAuth } from "../../../../contexts/AuthContext"
 import { Link, useNavigate } from "react-router-dom"
 
+import "./Login.css";
+import "./styleguide.css";
+
 export default function Login() {
   const emailRef = useRef()
   const passwordRef = useRef()
@@ -29,19 +32,19 @@ export default function Login() {
   return (
     <>
       <div>
-        <div className="body_login">
-          <h2 className="text-center mb-4">Log In</h2>
+        <div className="LoginCard">
+          <h2 className="plusjakartasans-extra-bold-ship-gray-48px">Log In</h2>
           {error && <alert variant="danger">{error}</alert>}
           <form onSubmit={handleSubmit}>
-            <form id="email">
+            <form className="inter-normal-aztec-24px" id="email">
               <label for="email" >Email</label>
-              <input type="email" ref={emailRef} required />
+              <input className="inputField" type="email" ref={emailRef} required />
             </form>
-            <group id="password">
+            <group className="inter-normal-aztec-24px" id="password">
               <label>Password</label>
-              <input type="password" ref={passwordRef} required />
+              <input className="inputField" type="password" ref={passwordRef} required />
             </group>
-            <input type="submit" value="Log In"></input>
+            <input className="loginBtn inter-semi-bold-white-16px " type="submit" value="Log In"></input>
           </form>
           <div className="w-100 text-center mt-3">
             <Link to="/forgot-password">Forgot Password?</Link>

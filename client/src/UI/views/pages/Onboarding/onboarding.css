@@ -27,6 +27,8 @@
   border-radius: 30px;
   gap: 7px;
   background: linear-gradient(145deg, #ffffff, #fafafb);
+  width: 500px;
+  margin-top: 20px;
 }
 
 .card__img {
@@ -81,7 +83,7 @@
   z-index: 1;
   padding: 0.7em 1.7em;
   border-radius: 0.5em;
-  background: #692be1;
+  background: #f4694c;
   border: 1px solid #dfdfdf;
   box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
 }
@@ -327,12 +329,18 @@
   text-decoration: none;
 }
 .container-center-horizontal {
+  align-items: flex-start;
   display: flex;
-  justify-content: center;
-  background-image: url(http://buenasnuevas.fm/wp-content/uploads/2022/10/back_Splash.jpg);
-  background-repeat-x: no-repeat;
+  height: inherit;
+  justify-content: flex-end;
+  padding: 55.8px;
+  margin: auto;
+  width: -webkit-fill-available;
+  background-repeat: no-repeat;
   background-position: center;
-  background-color: #141414;
+  background-image: linear-gradient(rgb(254 254 254 / 80%), #bf381ad4),
+    url(https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-size: cover;
 }
 .container-center-horizontal > * {
   flex-shrink: 0;
@@ -576,4 +584,19 @@
   height: 928px;
   object-fit: cover;
   width: 428px;
+}
+
+.sign-in {
+  box-shadow: 0px 14px 40px #00000057;
+  display: grid;
+  align-content: space-around;
+  justify-content: space-around;
+  align-items: center;
+  justify-items: center;
+  border-radius: 30px;
+  gap: 7px;
+  width: 500px;
+  margin: auto;
+  background: linear-gradient(#4934724f, rgb(0 0 0)),
+    url(http://buenasnuevas.fm/wp-content/uploads/2022/10/back_Splash.jpg);
 }
