@@ -600,3 +600,9 @@
   background: linear-gradient(#894cff4f, rgb(0 0 0)),
     url(http://buenasnuevas.fm/wp-content/uploads/2022/10/back_Splash.jpg);
 }
+
+@media (max-width: 650px) {
+  .frameboard {
+    margin-top: 0px;
+  }
+}

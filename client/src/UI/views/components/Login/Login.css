@@ -52,7 +52,7 @@
 }
 
 .inputLogin:focus,
-input:hover {
+inputLogin:hover {
   outline: none;
   padding: 1.2rem 1rem;
   border-radius: 60px;
