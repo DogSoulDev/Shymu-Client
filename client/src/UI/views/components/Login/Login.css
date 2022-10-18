@@ -1,210 +1,90 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: "Poppins", sans-serif;
+@import url("https://fonts.googleapis.com/css?family=Inter:400,600,800|Mulish:700,500|Poppins:500,600|Roboto:500|Plus+Jakarta+Sans:800");
+
+.LoginBG {
+  align-items: flex-start;
+  display: flex;
+  height: inherit;
+  justify-content: flex-end;
+  padding: 55.8px;
+  margin: auto;
+  width: -webkit-fill-available;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: linear-gradient(rgb(254 254 254 / 80%), #bf381ad4),
+    url(https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-size: cover;
 }
 
-.body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
-	flex-direction: column;
-	background: #ffffff;
-}
-.box {
-	position: relative;
-	width: 380px;
-	height: 420px;
-	background: #d3d3d3;
-	border-radius: 8px;
-	overflow: hidden;
-}
-.box::before {
-	content: "";
-	z-index: 1;
-	position: absolute;
-	top: -50%;
-	left: -50%;
-	width: 380px;
-	height: 420px;
-	transform-origin: bottom right;
-	background: linear-gradient(0deg, transparent, #F4694C, #F4694C);
-	animation: animate 6s linear infinite;
-}
-.box::after {
-	content: "";
-	z-index: 1;
-	position: absolute;
-	top: -50%;
-	left: -50%;
-	width: 380px;
-	height: 420px;
-	transform-origin: bottom right;
-	background: linear-gradient(0deg, transparent, #F4694C, #F4694C);
-	animation: animate 6s linear infinite;
-	animation-delay: -3s;
+.LoginCard {
+  align-items: center;
+  background-position: 50% 50%;
+  display: flex;
+  flex-direction: column;
+  min-height: 928px;
+  padding: 14px 36px;
+  justify-content: center;
+  box-shadow: 0px 14px 40px #00000057;
+  border-radius: 30px;
+  width: 500px;
+  margin: auto;
+  background: linear-gradient(#894cff4f, rgb(0 0 0)),
+    url(http://buenasnuevas.fm/wp-content/uploads/2022/10/back_Splash.jpg);
+  color: white;
+  line-height: 30px;
 }
 
-.boxRegister {
-	position: relative;
-	width: 380px;
-	height: 780px;
-	background: #1c1c1c;
-	border-radius: 8px;
-	overflow: hidden;
-	margin: 25px;
-}
-.boxRegister::before {
-	content: "";
-	z-index: 1;
-	position: absolute;
-	top: -50%;
-	left: -50%;
-	width: 380px;
-	height: 820px;
-	transform-origin: bottom right;
-	background: linear-gradient(0deg, transparent, #F4694C, #F4694C);
-	animation: animate 6s linear infinite;
-}
-.boxRegister::after {
-	content: "";
-	z-index: 1;
-	position: absolute;
-	top: -50%;
-	left: -50%;
-	width: 380px;
-	height: 820px;
-	transform-origin: bottom right;
-	background: linear-gradient(0deg, transparent, #F4694C, #F4694C);
-	animation: animate 6s linear infinite;
-	animation-delay: -3s;
+.inputField {
+  border: none;
+  border-bottom: 2px solid #f4684c;
+  background: none;
+  padding: 20px;
+  padding-left: 30px;
+  transition: 0.2s;
+  margin-bottom: 35px;
+  display: flex;
+  color: white;
 }
 
-@keyframes animate {
-	0% {
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(360deg);
-	}
-}
-form {
-	position: absolute;
-	inset: 2px;
-	background: #e2e1e1;
-	padding: 50px 40px;
-	border-radius: 8px;
-	z-index: 2;
-	display: flex;
-	flex-direction: column;
-}
-h1 {
-	color: rgb(55, 55, 55);
-	font-weight: 400;
-	text-align: center;
-}
-.inputBox {
-	position: relative;
-	width: 300px;
-	margin-top: 35px;
-}
-.inputBox input {
-	position: relative;
-	width: 100%;
-	padding: 20px 10px 10px;
-	background: transparent;
-	outline: none;
-	box-shadow: none;
-	border: none;
-	color: #23242a;
-	font-size: 1em;
-	letter-spacing: 0.05em;
-	transition: 0.5s;
-	z-index: 10;
-}
-.inputBox span {
-	position: absolute;
-	left: 0;
-	padding: 20px 0px 10px;
-	pointer-events: none;
-	font-size: 1em;
-	color: #F4694C;
-	letter-spacing: 0.05em;
-	transition: 0.5s;
-}
-.inputBox input:valid ~ span,
-.inputBox input:focus ~ span {
-	color: #F4694C;
-	transform: translateX(0px) translateY(-34px);
-	font-size: 0.75em;
-}
-.inputBox i {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	height: 2px;
-	background: #ffffff;
-	border-radius: 4px;
-	overflow: hidden;
-	transition: 0.5s;
-	pointer-events: none;
-	z-index: 9;
-}
-.inputBox input:valid ~ i,
-.inputBox input:focus ~ i {
-	height: 44px;
-}
-.links {
-	display: flex;
-	justify-content: space-between;
-}
-.links a {
-	margin: 10px 0;
-	font-size: 0.75em;
-	color: #8f8f8f;
-	text-decoration: beige;
-}
-.links a:hover,
-.links a:nth-child(2) {
-	color: #F4694C;
-}
-input[type="submit"] {
-	width: 200px;
-	border: none;
-	padding: 15px 30px;
-	background-color: #F4694C;
-	border-radius: 50px;
-	font-size: 15px;
-	font-weight: bolder;
-	color: white;
-	cursor: pointer;
-	margin-top: 20px;
-	margin-bottom: 30px;
-	margin-left: 50px;
-	align-items: center !important;
-	justify-content: center;
-	
-}
-input[type="submit"]:active {
-	opacity: 0.8;
+.loginBtn {
+  height: 65px;
+  width: -webkit-fill-available;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding: 0.7em 1.7em;
+  border-radius: 0.5em;
+  background: #f4694c;
+  margin-bottom: 30px;
 }
 
-.error {
-	color: red;
-	font-size: 10px;
+.needAccount {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: stretch;
+  justify-content: center;
 }
 
-img {
-	width: 200px;
-	height: auto;
-	padding-bottom: 10px;
+.WelcomeLogin {
+  font-family: "Inter";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 0px;
 }
 
-h6 {
-	color: white;
-	margin-top: 20px;
+.WelcomeLoginText {
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  line-height: 0px;
+  font-weight: 400;
+  margin-bottom: 10%;
+}
+
+.ShymuLogin {
+  height: 120px;
+  transform: scale(1.1);
+  margin: 0px;
 }

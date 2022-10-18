@@ -1,109 +1,63 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react"
+import shymu_Logo1 from "../../../img/shymu-logo-1.png";
+import Logo from "../../../img/shymu-logo-1@2x.png";
+
+import { useAuth } from "../../../../contexts/AuthContext"
+import { Link, useNavigate } from "react-router-dom"
+
 import "./Login.css";
-import Logo from "../../../img/SHYMU_LOGO.png";
-// import Dashboard from "../../pages/Dashboard/Dashboard";
-// import Register from "../SignUp/Register"
-// import {Link} from "react-router-dom"
-import { Navigate } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+import "./styleguide.css";
 
-
-function App() {
+export default function Login() {
+  const emailRef = useRef()
+  const passwordRef = useRef()
+  const { login } = useAuth()
+  const [error, setError] = useState("")
+  const [loading, setLoading] = useState(false)
   const navigate = useNavigate()
-  // React States
-  const [errorMessages, setErrorMessages] = useState({});
-  const [isSubmitted, setIsSubmitted] = useState(false);
 
-  // User Login info
-  const database = [
-    {
-      username: "user1",
-      password: "pass1",
-    },
-  ];
+  async function handleSubmit(e) {
+    e.preventDefault()
 
-  const errors = {
-    uname: "invalid username",
-    pass: "invalid password",
-  };
-
-  const handleLogin = (event) => {
-    //Prevent page reload
-    event.preventDefault();
-
-    var { username, pass } = document.forms[0];
-
-    // Find user login info
-    const userData = database.find((user) => user.username === username.value);
-
-    // Compare user info
-    if (userData) {
-      if (userData.password !== pass.value) {
-        // Invalid password
-        setErrorMessages({ name: "userpass", message: errors.pass });
-      } else {
-        setIsSubmitted(true);
-      }
-    } else {
-      // Username not found
-      setErrorMessages({ name: "username", message: errors.uname });
+    try {
+      setError("")
+      setLoading(true)
+      await login(emailRef.current.value, passwordRef.current.value)
+      navigate("/dashboard")
+    } catch {
+      setError("Failed to log in")
     }
-  };
 
-  // Generate JSX code for error message
-  const renderErrorMessage = (name) =>
-    name === errorMessages.name && (
-      <div className='error'>{errorMessages.message}</div>
-    );
+    setLoading(false)
+  }
 
-  const renderForm = (
-    <div className='body'>
-      <img src={Logo} alt='Logo' />
-      <div className='box'>
-        <form className='singInForm' onSubmit={handleLogin}>
-          <h1>Let's get you in!</h1>
-          <div className='inputBox'>
-            <input
-              type='text'
-              name='username'
-              autoComplete='off'
-              required
-            />
-            <span>UserName</span>
-            <i></i>
-          </div>
-          {renderErrorMessage("username")}
-
-          <div className='inputBox'>
-            <input
-              type='password'
-              name='pass'
-              autoComplete='new-password'
-              required
-            />
-
-            <span>Password</span>
-            <i></i>
-          </div>
-          {renderErrorMessage("userpass")}
-          <div className='links'>
-          <input
-          type='link'
-          value='SingUp'
-          className='card__btn'
-          onClick={()=> navigate("/register")}
-        />
-          </div>
-          <input type='submit' value='Login' />
-        </form>
-      </div>
-    </div>
-  );
-
-  /* Redirection location when user is correct. Change later */
   return (
-    <div className='login-form'>{isSubmitted ? <Navigate replace to="/dashboard" /> : renderForm}</div>
-  );
+    <>
+      <div className="LoginBG" >
+        <div className="LoginCard">
+          <img className="ShymuLogin animate-enter" src={Logo} alt="SHYMU_LOGO 1" />
+          <h2 className="WelcomeLogin">Welcome Back!</h2>
+          <p className="WelcomeLoginText">Please enter your account here</p>
+          {error && <alert variant="danger">{error}</alert>}
+          <form onSubmit={handleSubmit}>
+            <form className="inter-normal-dove-gray-15px" id="email">
+              <label for="email" >Email</label>
+              <input className="inputField" type="email" ref={emailRef} required />
+            </form>
+            <group className="inter-normal-dove-gray-15px" id="password">
+              <label>Password</label>
+              <input className="inputField" type="password" ref={passwordRef} required />
+            </group>
+            <input className="loginBtn inter-semi-bold-white-16px " type="submit" value="Log In"></input>
+          </form>
+          <div className="mulish-medium-white-16px">
+            <Link to="/forgot-password">Forgot Password?</Link>
+          </div>
+          <div className="mulish-medium-white-16px">
+        Need an account? <Link to="/signup">Sign Up</Link>
+      </div>
+        </div>
+      </div>
+    </>
+  )
 }
-
-export default App;
