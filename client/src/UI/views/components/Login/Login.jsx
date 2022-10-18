@@ -39,14 +39,14 @@ export default function Login() {
           <h2 className="WelcomeLogin">Welcome Back!</h2>
           <p className="WelcomeLoginText">Please enter your account here</p>
           {error && <alert variant="danger">{error}</alert>}
-          <form onSubmit={handleSubmit}>
-            <form className="inter-normal-dove-gray-15px" id="email">
-              <label for="email" >Email</label>
-              <input className="inputField" type="email" placeholder="info@mailaddress.com" ref={emailRef} required />
-            </form>
+          <form className="formLogin" onSubmit={handleSubmit}>
+            <group className="inter-normal-dove-gray-15px" id="email">
+            <input placeholder="email" type="email" className="inputLogin" ref={emailRef} required />
+              {/* <input className="inputField" type="email" placeholder="info@mailaddress.com" ref={emailRef} required /> */}
+            </group>
             <group className="inter-normal-dove-gray-15px" id="password">
-              <label>Password</label>
-              <input className="inputField" type="password" ref={passwordRef} required />
+            <input placeholder="password" type="password" className="inputLogin" ref={passwordRef} required />
+              {/* <input className="inputField" type="password" ref={passwordRef} required /> */}
             </group>
             <input className="loginBtn inter-semi-bold-white-16px " type="submit" value="Log In"></input>
           </form>

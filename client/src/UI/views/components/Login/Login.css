@@ -32,8 +32,43 @@
   color: white;
   line-height: 30px;
 }
+/* From uiverse.io by @alexruix */
 
-.inputField {
+.formLogin {
+  width: 80%;
+}
+
+.inputLogin {
+  line-height: 28px;
+  border: 2px solid transparent;
+  border-bottom-color: #f4684c;
+  padding: 0.2rem 0;
+  outline: none;
+  background-color: transparent;
+  color: #ffffff;
+  transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  width: -webkit-fill-available;
+  margin-bottom: 30px;
+}
+
+.inputLogin:focus,
+input:hover {
+  outline: none;
+  padding: 1.2rem 1rem;
+  border-radius: 60px;
+  border-color: #f4684c;
+}
+
+.input::placeholder {
+  color: #f4684c;
+}
+
+.input:focus::placeholder {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+/* From uiverse.io by @alexruix */
+/* .inputField {
   background: none;
   padding: 20px 60px;
   transition: 0.2s;
@@ -44,7 +79,7 @@
   border-radius: 999px;
   background-color: transparent;
   text-align: center;
-}
+} */
 
 .loginBtn {
   height: 65px;
