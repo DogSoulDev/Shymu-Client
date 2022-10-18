@@ -21,7 +21,9 @@ const OnboardingSecondPage = ({
     <div className='card'>
       {btnSecondPage ? (
         <div className='card__content'>
+          <div className='frameboard' >
           <div className='card__img'>
+          
             <img src={Singer} alt='' />
           </div>
           <div className='card__text'>
@@ -55,6 +57,8 @@ const OnboardingSecondPage = ({
                   <div className="rectangle-5"></div>
                   <div className="ellipse"></div>
               </div>
+              
+        </div>
         </div>
       ) : (
         <OnboardingThirdPage

@@ -1,7 +1,6 @@
 import React, { useRef, useState } from "react"
 import { useAuth } from "../../../../contexts/AuthContext"
 import { Link, useNavigate } from "react-router-dom"
-import Error from "../Error/ErrorFields"
 
 export default function UpdateProfile() {
   const emailRef = useRef()
@@ -46,11 +45,11 @@ export default function UpdateProfile() {
       <div>
         <div>
           <h2 className="text-center mb-4">Update Profile</h2>
-          {error && <Error variant="danger">{error}</Error>}
-          <form onSubmit={handleSubmit}>
+          {error && <alert variant="danger">{error}</alert>}
+          <div onSubmit={handleSubmit}>
             <div id="email">
-              <label>Email</label>
-              <input
+              <div>Email</div>
+              <div
                 type="email"
                 ref={emailRef}
                 required
@@ -58,25 +57,25 @@ export default function UpdateProfile() {
               />
             </div>
             <div id="password">
-              <label>Password</label>
-              <input
+              <div>Password</div>
+              <div
                 type="password"
                 ref={passwordRef}
                 placeholder="Leave blank to keep the same"
               />
             </div>
             <div id="password-confirm">
-              <label>Password Confirmation</label>
-              <input
+              <div>Password Confirmation</div>
+              <div
                 type="password"
                 ref={passwordConfirmRef}
                 placeholder="Leave blank to keep the same"
               />
             </div>
-            <button disabled={loading} className="w-100" type="submit">
+            <div disabled={loading} className="w-100" type="submit">
               Update
-            </button>
-          </form>
+            </div>
+          </div>
         </div>
       </div>
       <div className="w-100 text-center mt-2">

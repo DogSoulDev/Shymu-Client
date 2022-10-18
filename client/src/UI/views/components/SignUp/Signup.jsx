@@ -37,24 +37,24 @@ async function handleSubmit(e) {
       <div>
         <div>
           <h2 className="text-center mb-4">Sign Up</h2>
-          {error && <Error variant="danger">{error}</Error>}
-          <form onSubmit={handleSubmit}>
+          {error && <alert variant="danger">{error}</alert>}
+          <div onSubmit={handleSubmit}>
             <div id="email">
-              <label>Email</label>
-              <input type="email" ref={emailRef} required />
+              <div>Email</div>
+              <div type="email" ref={emailRef} required />
             </div>
             <div id="password">
-              <label>Password</label>
-              <input type="password" ref={passwordRef} required />
+              <div>Password</div>
+              <div type="password" ref={passwordRef} required />
             </div>
             <div id="password-confirm">
-              <label>Password Confirmation</label>
-              <input type="password" ref={passwordConfirmRef} required />
+              <div>Password Confirmation</div>
+              <div type="password" ref={passwordConfirmRef} required />
             </div>
-            <button disabled={loading} className="w-100" type="submit">
+            <div disabled={loading} className="w-100" type="submit">
               Sign Up
-            </button>
-          </form>
+            </div>
+          </div>
         </div>
       </div>
       <div className="w-100 text-center mt-2">

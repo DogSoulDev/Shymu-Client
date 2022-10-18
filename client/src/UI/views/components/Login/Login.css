@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:400,600,800|Mulish:700,500|Poppins:500,600|Roboto:500|Plus+Jakarta+Sans:800");
+
+.LoginBG {
+  align-items: flex-start;
+  display: flex;
+  height: inherit;
+  justify-content: flex-end;
+  padding: 55.8px;
+  margin: auto;
+  width: -webkit-fill-available;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: linear-gradient(rgb(254 254 254 / 80%), #bf381ad4),
+    url(https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-size: cover;
+}
+
+.LoginCard {
+  align-items: center;
+  background-position: 50% 50%;
+  display: flex;
+  flex-direction: column;
+  min-height: 928px;
+  padding: 14px 36px;
+  justify-content: center;
+  box-shadow: 0px 14px 40px #00000057;
+  border-radius: 30px;
+  width: 500px;
+  margin: auto;
+  background: linear-gradient(#894cff4f, rgb(0 0 0)),
+    url(http://buenasnuevas.fm/wp-content/uploads/2022/10/back_Splash.jpg);
+  color: white;
+  line-height: 30px;
+}
+
+.inputField {
+  border: none;
+  border-bottom: 2px solid #f4684c;
+  background: none;
+  padding: 20px;
+  padding-left: 30px;
+  transition: 0.2s;
+  margin-bottom: 35px;
+  display: flex;
+  color: white;
+}
+
+.loginBtn {
+  height: 65px;
+  width: -webkit-fill-available;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding: 0.7em 1.7em;
+  border-radius: 0.5em;
+  background: #f4694c;
+  margin-bottom: 30px;
+}
+
+.needAccount {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: stretch;
+  justify-content: center;
+}
+
+.WelcomeLogin {
+  font-family: "Inter";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 0px;
+}
+
+.WelcomeLoginText {
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  line-height: 0px;
+  font-weight: 400;
+  margin-bottom: 10%;
+}
+
+.ShymuLogin {
+  height: 120px;
+  transform: scale(1.1);
+  margin: 0px;
+}

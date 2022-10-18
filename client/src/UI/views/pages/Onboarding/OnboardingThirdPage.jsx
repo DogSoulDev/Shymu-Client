@@ -14,6 +14,7 @@ const OnboardingThirdPage = ({ btnThirdPage, setBtnThirdPage }) => {
     <div className='card'>
       {btnThirdPage ? (
         <div className='card__content'>
+          <div className='frameboard' >
           <div className='card__img3'>
             <img className='card__img2' src={Singer} alt='' />
           </div>
@@ -47,6 +48,7 @@ const OnboardingThirdPage = ({ btnThirdPage, setBtnThirdPage }) => {
                   <div className="ellipse"></div>
                   <div className="rectangle-5"></div>
               </div>
+        </div>
         </div>
       ) : (
         <OnboardingFourPage />

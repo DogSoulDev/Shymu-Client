@@ -31,17 +31,17 @@ export default function ForgotPassword() {
       <div>
         <div>
           <h2 className="text-center mb-4">Password Reset</h2>
-          {error && <Error variant="danger">{error}</Error>}
-          {message && <Error variant="success">{message}</Error>}
-          <form onSubmit={handleSubmit}>
+          {error && <alert variant="danger">{error}</alert>}
+          {message && <alert variant="success">{message}</alert>}
+          <div onSubmit={handleSubmit}>
             <div id="email">
-              <label>Email</label>
-              <input type="email" ref={emailRef} required />
+              <div>Email</div>
+              <div type="email" ref={emailRef} required />
             </div>
-            <button disabled={loading} className="w-100" type="submit">
+            <div disabled={loading} className="w-100" type="submit">
               Reset Password
-            </button>
-          </form>
+            </div>
+          </div>
           <div className="w-100 text-center mt-3">
             <Link to="/login">Login</Link>
           </div>

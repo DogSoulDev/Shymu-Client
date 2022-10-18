@@ -1,7 +1,13 @@
 import React, { useRef, useState } from "react"
+import shymu_Logo1 from "../../../img/shymu-logo-1.png";
+import Logo from "../../../img/shymu-logo-1@2x.png";
+
 import { useAuth } from "../../../../contexts/AuthContext"
 import { Link, useNavigate } from "react-router-dom"
 import Error from "../Error/ErrorFields"
+
+import "./Login.css";
+import "./styleguide.css";
 
 export default function Login() {
   const emailRef = useRef()
@@ -28,30 +34,30 @@ export default function Login() {
 
   return (
     <>
-      <div>
-        <div>
-          <h2 className="text-center mb-4">Log In</h2>
-          {error && <Error variant="danger">{error}</Error>}
+      <div className="LoginBG" >
+        <div className="LoginCard">
+          <img className="ShymuLogin animate-enter" src={Logo} alt="SHYMU_LOGO 1" />
+          <h2 className="WelcomeLogin">Welcome Back!</h2>
+          <p className="WelcomeLoginText">Please enter your account here</p>
+          {error && <alert variant="danger">{error}</alert>}
           <form onSubmit={handleSubmit}>
-            <div id="email">
-              <label>Email</label>
-              <input type="email" ref={emailRef} required />
-            </div>
-            <div id="password">
+            <form className="inter-normal-dove-gray-15px" id="email">
+              <label for="email" >Email</label>
+              <input className="inputField" type="email" ref={emailRef} required />
+            </form>
+            <group className="inter-normal-dove-gray-15px" id="password">
               <label>Password</label>
-              <input type="password" ref={passwordRef} required />
-            </div>
-            <button disabled={loading} className="w-100" type="submit">
-              Log In
-            </button>
+              <input className="inputField" type="password" ref={passwordRef} required />
+            </group>
+            <input className="loginBtn inter-semi-bold-white-16px " type="submit" value="Log In"></input>
           </form>
-          <div className="w-100 text-center mt-3">
+          <div className="mulish-medium-white-16px">
             <Link to="/forgot-password">Forgot Password?</Link>
           </div>
-        </div>
-      </div>
-      <div className="w-100 text-center mt-2">
+          <div className="mulish-medium-white-16px">
         Need an account? <Link to="/signup">Sign Up</Link>
+      </div>
+        </div>
       </div>
     </>
   )

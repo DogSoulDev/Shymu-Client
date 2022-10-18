@@ -29,8 +29,8 @@ const OnboardingFirstPage = ({
       {btnFirstPage ? (
          <div className='card__content'>
          <div className='card__img'>
+          <div className='frameboard' >
             <img src={Singer} alt='Bg-img'/>
-            
             <h1 className="title_-onboarding plusjakartasans-extra-bold-white-48px">
                 <span className="plusjakartasans-extra-bold-ship-gray-48px">CONNECT</span>
                 <span className="plusjakartasans-extra-bold-outrageous-orange-48px">.</span>
@@ -55,7 +55,6 @@ const OnboardingFirstPage = ({
             className='card__btn back-1 inter-semi-bold-white-16px '
             onClick={handleBtnFirstPage}
           />
-          
 
           </div>
               <div className="slider">
@@ -65,7 +64,8 @@ const OnboardingFirstPage = ({
               </div>
         </div>
         </div>
-      ) 
+        </div>
+      )
       : (
         <OnboardingSecondPage
           setBtnFirstPage={setBtnFirstPage}

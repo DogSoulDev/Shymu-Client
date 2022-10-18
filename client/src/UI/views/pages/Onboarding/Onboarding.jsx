@@ -28,11 +28,12 @@ const Onboarding = () => {
       <div className='skip inter-normal-outrageous-orange-14px'>skip</div>
       </Link>
       <div onClick={handleLogo} className='logo-container'> 
+      <img src={Logo} alt='shymu_logo' className='shymu_logo animate-enter' />
        <div className='logo-sub-title'>
         <span className='span0'>Matching never sounded so </span>
         <span className='span1'>good</span>
        </div>
-       <img src={Logo} alt='shymu_logo' className='shymu_logo animate-enter' />
+      
       </div>
      </div>
     </div>
