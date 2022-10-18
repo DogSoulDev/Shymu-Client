@@ -42,7 +42,7 @@ export default function Login() {
           <form onSubmit={handleSubmit}>
             <form className="inter-normal-dove-gray-15px" id="email">
               <label for="email" >Email</label>
-              <input className="inputField" type="email" ref={emailRef} required />
+              <input className="inputField" type="email" placeholder="info@mailaddress.com" ref={emailRef} required />
             </form>
             <group className="inter-normal-dove-gray-15px" id="password">
               <label>Password</label>

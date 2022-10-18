@@ -34,15 +34,16 @@
 }
 
 .inputField {
-  border: none;
-  border-bottom: 2px solid #f4684c;
   background: none;
-  padding: 20px;
-  padding-left: 30px;
+  padding: 20px 60px;
   transition: 0.2s;
   margin-bottom: 35px;
   display: flex;
   color: white;
+  border: 1px solid #f4684c;
+  border-radius: 999px;
+  background-color: transparent;
+  text-align: center;
 }
 
 .loginBtn {
@@ -53,7 +54,7 @@
   overflow: hidden;
   z-index: 1;
   padding: 0.7em 1.7em;
-  border-radius: 0.5em;
+  border-radius: 60px;
   background: #f4694c;
   margin-bottom: 30px;
 }
