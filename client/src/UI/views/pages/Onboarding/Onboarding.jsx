@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import OnboardingFirstPage from "./OnboardingFirstPage";
 import "./onboarding.css";
-import "./styleguide.css";
+import "../../../../styleguide.css";
 import Logo from "../../../img/shymu-logo-1@2x.png";
 
 const Onboarding = () => {

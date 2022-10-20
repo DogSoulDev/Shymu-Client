@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import Singer from "../../../img/photo1.jpg";
 import "./onboarding.css"
-import "./styleguide.css";
+import "../../../../styleguide.css";
 
 const OnboardingFirstPage = ({
   setLogo,

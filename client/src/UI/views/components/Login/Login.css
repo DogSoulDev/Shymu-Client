@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Inter:400,600,800|Mulish:700,500|Poppins:500,600|Roboto:500|Plus+Jakarta+Sans:800");
-
+a {
+  color: #f4684c;
+}
 .LoginBG {
   align-items: flex-start;
   display: flex;
@@ -32,18 +34,54 @@
   color: white;
   line-height: 30px;
 }
+/* From uiverse.io by @alexruix */
 
-.inputField {
-  border: none;
-  border-bottom: 2px solid #f4684c;
+.formLogin {
+  width: 80%;
+}
+
+.inputLogin {
+  line-height: 28px;
+  border: 2px solid transparent;
+  border-bottom-color: #f4684c;
+  padding: 0.2rem 0;
+  outline: none;
+  background-color: transparent;
+  color: #ffffff;
+  transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  width: -webkit-fill-available;
+  margin-bottom: 30px;
+}
+
+.inputLogin:focus,
+inputLogin:hover {
+  outline: none;
+  padding: 1.2rem 1rem;
+  border-radius: 60px;
+  border-color: #f4684c;
+}
+
+.input::placeholder {
+  color: #f4684c;
+}
+
+.input:focus::placeholder {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+/* From uiverse.io by @alexruix */
+/* .inputField {
   background: none;
-  padding: 20px;
-  padding-left: 30px;
+  padding: 20px 60px;
   transition: 0.2s;
   margin-bottom: 35px;
   display: flex;
   color: white;
-}
+  border: 1px solid #f4684c;
+  border-radius: 999px;
+  background-color: transparent;
+  text-align: center;
+} */
 
 .loginBtn {
   height: 65px;
@@ -53,7 +91,7 @@
   overflow: hidden;
   z-index: 1;
   padding: 0.7em 1.7em;
-  border-radius: 0.5em;
+  border-radius: 60px;
   background: #f4694c;
   margin-bottom: 30px;
 }
@@ -87,4 +125,47 @@
   height: 120px;
   transform: scale(1.1);
   margin: 0px;
+}
+
+@media (max-width: 650px) {
+  .LoginBG {
+    align-items: flex-start;
+    display: flex;
+    height: inherit;
+    justify-content: flex-end;
+    padding: 0px;
+    margin: auto;
+    width: -webkit-fill-available;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: linear-gradient(rgb(254 254 254 / 80%), #bf381ad4),
+      url(https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-size: cover;
+  }
+  .LoginCard {
+    align-items: center;
+    background-position: 50% 50%;
+    display: flex;
+    flex-direction: column;
+    min-height: 738px;
+    padding: 0px;
+    justify-content: center;
+    box-shadow: 0px 14px 40px #00000057;
+    border-radius: 0px;
+    width: -webkit-fill-available;
+    margin: auto;
+    background: linear-gradient(#894cff4f, rgb(0 0 0)),
+      url(http://buenasnuevas.fm/wp-content/uploads/2022/10/back_Splash.jpg);
+    color: white;
+    line-height: 30px;
+  }
+  .loginBtn {
+    cursor: pointer;
+  }
+
+  .linkSkip {
+    position: fixed;
+    margin: 25px 30px;
+    z-index: 1;
+  }
 }

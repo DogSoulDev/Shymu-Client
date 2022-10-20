@@ -20,7 +20,7 @@ const Router = () => {
 
 				<AuthProvider>
 					<Routes>
-						<Route path='/onboarding' element={<Onboarding />} />				</Routes> 
+						<Route path='/onboarding' element={<Onboarding />} /></Routes> 
 					<Routes>
 						<Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>}></Route>
 

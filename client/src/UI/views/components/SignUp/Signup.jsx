@@ -1,11 +1,10 @@
-
 import React, { useRef, useState } from "react"
+import Logo from "../../../img/shymu-logo-1@2x.png";
 import { useAuth } from "../../../../contexts/AuthContext"
 import { Link, useNavigate } from "react-router-dom"
+import Error from "../Error/ErrorFields"
 
-
-
-
+import "../Login/Login.css";
 
 
 export default function Signup() {
@@ -36,32 +35,31 @@ async function handleSubmit(e) {
   }
   return (
     <>
-      <div>
-        <div>
-          <h2 className="text-center mb-4">Sign Up</h2>
-          {error && <alert variant="danger">{error}</alert>}
-          <div onSubmit={handleSubmit}>
-            <div id="email">
-              <div>Email</div>
-              <div type="email" ref={emailRef} required />
+      <div className="LoginBG" >
+        <div className="LoginCard">
+          <img className="ShymuLogin animate-enter" src={Logo} alt="SHYMU_LOGO 1" />
+          <h2 className="WelcomeLogin">Become one of us</h2>
+          <p className="WelcomeLoginText">Create account to continue</p>
+          {error && <Error variant="danger">{error}</Error>}
+          <form className="formLogin" onSubmit={handleSubmit}>
+          <div className="inter-normal-dove-gray-15px" id="email">
+              <input placeholder="Email" type="email" className="inputLogin" ref={emailRef} required />
+              
             </div>
-            <div id="password">
-              <div>Password</div>
-              <div type="password" ref={passwordRef} required />
+            <div className="inter-normal-dove-gray-15px" id="password">
+              <input placeholder="Password" type="password" className="inputLogin" ref={passwordRef} required />
             </div>
-            <div id="password-confirm">
-              <div>Password Confirmation</div>
-              <div type="password" ref={passwordConfirmRef} required />
+            <div className="inter-normal-dove-gray-15px" id="password-confirm">
+              <input placeholder="Password Confirmation" type="password" className="inputLogin" ref={passwordConfirmRef} required />
             </div>
-            <div disabled={loading} className="w-100" type="submit">
-              Sign Up
-            </div>
-          </div>
+            <input  className="loginBtn inter-semi-bold-white-16px " type="submit" value="Sign Up"></input>
+          </form>
+          <div className="mulish-medium-white-16px">
+          Already have account? <Link to="/login">Log In</Link>
+         </div>
         </div>
       </div>
-      <div className="w-100 text-center mt-2">
-        Already have an account? Log In <Link to="/login">Log In</Link>
-      </div>
+     
     </>
   )
 }

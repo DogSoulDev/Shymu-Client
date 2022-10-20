@@ -344,6 +344,17 @@ template {
   display: none;
 }
 
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
 /**
  * Add the correct display in IE 10.
  */
