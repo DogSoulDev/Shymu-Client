@@ -1,9 +1,10 @@
 
 import React, { useRef, useState } from "react"
+import Logo from "../../../img/shymu-logo-1@2x.png";
 import { useAuth } from "../../../../contexts/AuthContext"
 import { Link, useNavigate } from "react-router-dom"
 
-
+import "../Login/Login.css";
 
 
 
@@ -37,26 +38,24 @@ async function handleSubmit(e) {
   return (
     <>
       <div className="LoginBG" >
-        <div>
-          <h2 className="text-center mb-4">Sign Up</h2>
+        <div className="LoginCard">
+          <h2 className="WelcomeLogin">Sign Up</h2>
+          <p className="WelcomeLoginText">Please enter your account here</p>
           {error && <alert variant="danger">{error}</alert>}
-          <div onSubmit={handleSubmit}>
-            <div id="email">
-              <div>Email</div>
-              <div type="email" ref={emailRef} required />
-            </div>
-            <div id="password">
-              <div>Password</div>
-              <div type="password" ref={passwordRef} required />
-            </div>
-            <div id="password-confirm">
-              <div>Password Confirmation</div>
-              <div type="password" ref={passwordConfirmRef} required />
-            </div>
-            <div disabled={loading} className="w-100" type="submit">
-              Sign Up
-            </div>
-          </div>
+          <form className="formLogin" onSubmit={handleSubmit}>
+          <group className="inter-normal-dove-gray-15px" id="email">
+              <input placeholder="Email" type="email" className="inputLogin" ref={emailRef} required />
+              {/* <div type="email" ref={emailRef} required /> */}
+            </group>
+            <group className="inter-normal-dove-gray-15px" id="password">
+              <input placeholder="Password" type="password" className="inputLogin" ref={passwordRef} required />
+            </group>
+            <group className="inter-normal-dove-gray-15px" id="password-confirm">
+              <input placeholder="Password Confirmation" type="password" className="inputLogin" ref={passwordConfirmRef} required />
+            </group>
+            <input  className="loginBtn inter-semi-bold-white-16px " type="submit" value="Sign Up"></input>
+            
+          </form>
         </div>
       </div>
       <div className="w-100 text-center mt-2">
