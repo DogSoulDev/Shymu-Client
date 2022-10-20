@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 
 import { useAuth } from "../../../../contexts/AuthContext"
 import { Link, useNavigate } from "react-router-dom"
-
+import Error from '../Error/ErrorFields'
 
 
 export default function Dashboard() {
@@ -32,17 +32,17 @@ export default function Dashboard() {
       <div>
         <div>
           <h2 className="text-center mb-4">Profile</h2>
-          {error && <alert variant="danger">{error}</alert>}
-          <strong>Hello </strong> {currentUser.email}
-          <Link to="/update-profile" className="btn btn-primary w-100 mt-3">
+          {error && <Error variant="danger">{error}</Error>}
+          <p>Hello You {currentUser.email}</p> 
+          <Link to="/update-profile" className="">
             Update Your Profile
           </Link>
         </div>
       </div>
       <div className="w-100 text-center mt-2">
-        <div variant="link" onClick={handleLogout}>
+        <button variant="link" onClick={handleLogout}>
           Log Out
-        </div>
+        </button>
       </div>
     </>
   )

@@ -1,11 +1,8 @@
-
 import React, { useRef, useState } from "react"
 import { useAuth } from "../../../../contexts/AuthContext"
 import { Link, useNavigate } from "react-router-dom"
 
-
-
-
+import Error from "../Error/ErrorFields"
 
 
 export default function Signup() {
@@ -39,23 +36,23 @@ async function handleSubmit(e) {
       <div>
         <div>
           <h2 className="text-center mb-4">Sign Up</h2>
-          {error && <alert variant="danger">{error}</alert>}
+          {error && <Error variant="danger">{error}</Error>}
           <div onSubmit={handleSubmit}>
             <div id="email">
               <div>Email</div>
-              <div type="email" ref={emailRef} required />
+              <input type="email" ref={emailRef} required />
             </div>
             <div id="password">
               <div>Password</div>
-              <div type="password" ref={passwordRef} required />
+              <input type="password" ref={passwordRef} required />
             </div>
             <div id="password-confirm">
               <div>Password Confirmation</div>
-              <div type="password" ref={passwordConfirmRef} required />
+              <input type="password" ref={passwordConfirmRef} required />
             </div>
-            <div disabled={loading} className="w-100" type="submit">
+            <button disabled={loading}  type="submit" onClick={handleSubmit}>
               Sign Up
-            </div>
+            </button>
           </div>
         </div>
       </div>
