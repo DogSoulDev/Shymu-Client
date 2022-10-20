@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Inter:400,600,800|Mulish:700,500|Poppins:500,600|Roboto:500|Plus+Jakarta+Sans:800");
-
+a {
+  color: #f4684c;
+}
 .LoginBG {
   align-items: flex-start;
   display: flex;
@@ -165,8 +167,5 @@ inputLogin:hover {
     position: fixed;
     margin: 25px 30px;
     z-index: 1;
-  }
-  a {
-    color: #f4684c;
   }
 }

@@ -61,9 +61,7 @@ async function handleSubmit(e) {
          </div>
         </div>
       </div>
-      <div className="w-100 text-center mt-2">
-        Already have an account? Log In <Link to="/login">Log In</Link>
-      </div>
+     
     </>
   )
 }
