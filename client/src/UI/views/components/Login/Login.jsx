@@ -1,9 +1,8 @@
-import React, { useRef, useState } from "react";
-import shymu_Logo1 from "../../../img/shymu-logo-1.png";
+import React, { useRef, useState } from "react"
 import Logo from "../../../img/shymu-logo-1@2x.png";
-
-import { useAuth } from "../../../../contexts/AuthContext";
-import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "../../../../contexts/AuthContext"
+import { Link, useNavigate } from "react-router-dom"
+import Error from "../Error/ErrorFields";
 
 import "./Login.css";
 import "../../../../styleguide.css";
@@ -38,7 +37,7 @@ export default function Login() {
      <img className='ShymuLogin animate-enter' src={Logo} alt='SHYMU_LOGO 1' />
      <h2 className='WelcomeLogin'>Welcome Back!</h2>
      <p className='WelcomeLoginText'>Please enter your account here</p>
-     {error && <alert variant='danger'>{error}</alert>}
+     {error && <Error variant='danger'>{error}</Error>}
      <form className='formLogin' onSubmit={handleSubmit}>
       <div className='inter-normal-dove-gray-15px' id='email'>
        <input
