@@ -39,8 +39,9 @@ async function handleSubmit(e) {
     <>
       <div className="LoginBG" >
         <div className="LoginCard">
-          <h2 className="WelcomeLogin">Sign Up</h2>
-          <p className="WelcomeLoginText">Please enter your account here</p>
+          <img className="ShymuLogin animate-enter" src={Logo} alt="SHYMU_LOGO 1" />
+          <h2 className="WelcomeLogin">Become one of us</h2>
+          <p className="WelcomeLoginText">Create account to continue</p>
           {error && <alert variant="danger">{error}</alert>}
           <form className="formLogin" onSubmit={handleSubmit}>
           <group className="inter-normal-dove-gray-15px" id="email">
@@ -54,8 +55,10 @@ async function handleSubmit(e) {
               <input placeholder="Password Confirmation" type="password" className="inputLogin" ref={passwordConfirmRef} required />
             </group>
             <input  className="loginBtn inter-semi-bold-white-16px " type="submit" value="Sign Up"></input>
-            
           </form>
+          <div className="mulish-medium-white-16px">
+          Already have account? <Link to="/login">Log In</Link>
+         </div>
         </div>
       </div>
       <div className="w-100 text-center mt-2">
