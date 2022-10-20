@@ -1,5 +1,4 @@
 import React, { useRef, useState } from "react"
-import shymu_Logo1 from "../../../img/shymu-logo-1.png";
 import Logo from "../../../img/shymu-logo-1@2x.png";
 
 import { useAuth } from "../../../../contexts/AuthContext"

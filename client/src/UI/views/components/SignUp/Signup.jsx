@@ -36,7 +36,7 @@ async function handleSubmit(e) {
   }
   return (
     <>
-      <div>
+      <div className="LoginBG" >
         <div>
           <h2 className="text-center mb-4">Sign Up</h2>
           {error && <alert variant="danger">{error}</alert>}
